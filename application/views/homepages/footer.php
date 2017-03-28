@@ -16,14 +16,14 @@
                 <div class="cell-sm-6 cell-md-3 offset-top-65 offset-sm-top-0">
                     <h6>Have Questions?</h6>
                     <div class="reveal-block offset-top-23"><a href="callto:#">190008198</a></div>
-                    <div class="reveal-block offset-top-10"><a href="mailto:#">info@booktour.org</a></div>
+                    <div class="reveal-block offset-top-10"><a href="mailto:#">info@funtravel.com</a></div>
                     <p class="offset-top-10">24/7 Dedicated Customer Support</p>
                 </div>
                 <div class="cell-sm-6 cell-md-4 cell-md-preffix-1 offset-top-65 offset-md-top-0 cell-sm-preffix-3">
                     <h6>Sign up for exclusive offers</h6>
                     <p class="offset-top-23">Join our email list. Sign up to receive hot deals, updates on new trips and know about exclusive offers on destinations all over the world.</p>
                     <!-- RD Mailform-->
-                    <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="http://themepro.top/book_tour2/bat/rd-mailform.php" class="rd-mailform offset-top-34">
+                    <form data-form-output="form-output-global" data-form-type="subscribe" method="post" action="" class="rd-mailform offset-top-34">
                         <div class="form-group">
                             <input id="contact-email" type="email" name="email" data-constraints="@Required @Email" placeholder="Enter your e-mail" class="form-control">
                         </div>
@@ -36,8 +36,8 @@
     <section class="bg-gray-dark section-10">
         <div class="shell">
             <p>
-                Book Tour
-                &copy; <span id="copyright-year"></span>. <a href="privacy.html">Privacy Policy
+                Fun Travel
+                &copy; <span id="copyright-year"></span>. <a href="#">Privacy Policy
                     <!-- {%FOOTER_LINK}--></a>
             </p>
         </div>
@@ -95,8 +95,8 @@
 </div>
 </div> -->
 <!-- Java script-->
-<script  type="text/javascript" src="js/core.min.js"></script>
-<script  type="text/javascript" src="js/script.js" ></script>
+<script  type="text/javascript" src="<?= base_url('homeassets/') ?>js/core.min.js"></script>
+<script  type="text/javascript" src="<?= base_url('homeassets/') ?>js/script.js" ></script>
 </body>
 
 <!-- Mirrored from themepro.top/book_tour2/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Mar 2017 16:16:32 GMT -->

@@ -24,5 +24,77 @@ class Home extends CI_Controller {
         $this->load->view('homepages/home');
         $this->load->view('homepages/footer');
     }
+    
+    public function destinations() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/destinations');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function about() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/about');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function testimonials() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/testimonials');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function contact() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/contact');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function bookings() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/bookings');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function family_vacations() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/family_vacations');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function vacation() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/vacation');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function vacations() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/vacations');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function offers() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/offers');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function cruises() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/cruises');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function search_cruises() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/search_cruises');
+        $this->load->view('homepages/footer');
+    }
+    
+    public function bahamas_cruises() {
+        $this->load->view('homepages/header');
+        $this->load->view('homepages/bahamas_cruises');
+        $this->load->view('homepages/footer');
+    }
 
 }

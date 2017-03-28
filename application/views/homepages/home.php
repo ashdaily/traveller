@@ -4,12 +4,12 @@
         <!-- Swiper--> 
         <div data-autoplay="5000" class="swiper-container swiper-slider text-center">
             <div class="swiper-wrapper">
-                <div data-slide-bg="images/index5.jpg" class="swiper-slide">             
+                <div data-slide-bg="<?= base_url('homeassets/') ?>images/index5.jpg" class="swiper-slide">             
                 </div>
-                <div data-slide-bg="images/index10.jpg" class="swiper-slide">
+                <div data-slide-bg="<?= base_url('homeassets/') ?>images/index10.jpg" class="swiper-slide">
 
                 </div>
-                <div data-slide-bg="images/index11.jpg" class="swiper-slide">             
+                <div data-slide-bg="<?= base_url('homeassets/') ?>images/index11.jpg" class="swiper-slide">             
                 </div>
             </div>
             <!-- Swiper Pagination-->
@@ -121,67 +121,67 @@
                 <!-- Owl Carousel-->
                 <div data-items="1" data-xs-items="1" data-sm-items="2" data-md-items="3" data-stage-padding="15" data-loop="false" data-margin="30" data-nav="true" class="owl-carousel">
                     <div class="owl-item">
-                        <div class="thumbnail-custom"><img src="images/index-2-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom"><img src="<?= base_url('homeassets/') ?>images/index-2-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Barcelona</h4>
                                 <p>2 nights + Flight + 4*Hotel</p>
-                                <div class="h4 price">400</div><a href="vacation_1.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">400</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom"><img src="images/index-3-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom"><img src="<?= base_url('homeassets/') ?>images/index-3-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>New York</h4>
                                 <p>1 night + Flight + 5*Hotel</p>
-                                <div class="h4 price">1,600</div><a href="vacation_1.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom"><img src="images/index-4-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom"><img src="<?= base_url('homeassets/') ?>images/index-4-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Los Angeles</h4>
                                 <p>3 nights + Flight + 4*Hotel</p>
-                                <div class="h4 price">1,100</div><a href="vacation_1.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,100</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom"><img src="images/index-2-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom"><img src="<?= base_url('homeassets/') ?>images/index-2-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Barcelona</h4>
                                 <p>2 nights + Flight + 4*Hotel</p>
-                                <div class="h4 price">400</div><a href="vacation_1.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">400</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom"><img src="images/index-3-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom"><img src="<?= base_url('homeassets/') ?>images/index-3-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>New York</h4>
                                 <p>1 night + Flight + 5*Hotel</p>
-                                <div class="h4 price">1,600</div><a href="vacation_1.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom"><img src="images/index-4-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom"><img src="<?= base_url('homeassets/') ?>images/index-4-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Los Angeles</h4>
                                 <p>3 nights + Flight + 4*Hotel</p>
-                                <div class="h4 price">1,100</div><a href="vacation_1.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,100</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="cell-xs-12 offset-top-50 text-center"><a href="vacation_1.html" data-text="All offers" class="btn btn-xs btn-winona btn-transparent-2">All offers</a></div>
+                <div class="cell-xs-12 offset-top-50 text-center"><a href="<?= base_url('home/vacation') ?>" data-text="All offers" class="btn btn-xs btn-winona btn-transparent-2">All offers</a></div>
             </div>
         </div>
     </section>
@@ -193,72 +193,72 @@
                     <h2>Most Popular Destinations</h2><a href="destinations.html" class="btn-link tt-u offset-top-21 reveal-inline-block">all Destinations</a>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-1">
-                    <div class="thumbnail-custom-2"><img src="images/index-5-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-5-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>H</span><span>a</span><span>v</span><span>a</span><span>n</span><span>a</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>H</span><span>a</span><span>v</span><span>a</span><span>n</span><span>a</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-2">
-                    <div class="thumbnail-custom-2"><img src="images/index-6-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-6-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>B</span><span>a</span><span>l</span><span>i</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>B</span><span>a</span><span>l</span><span>i</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-3">
-                    <div class="thumbnail-custom-2"><img src="images/index-7-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-7-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>M</span><span>a</span><span>d</span><span>a</span><span>g</span><span>a</span><span>s</span><span>c</span><span>a</span><span>r</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>M</span><span>a</span><span>d</span><span>a</span><span>g</span><span>a</span><span>s</span><span>c</span><span>a</span><span>r</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-4">
-                    <div class="thumbnail-custom-2"><img src="images/index-8-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-8-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>T</span><span>u</span><span>r</span><span>k</span><span>e</span><span>y</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>T</span><span>u</span><span>r</span><span>k</span><span>e</span><span>y</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-5">
-                    <div class="thumbnail-custom-2"><img src="images/index-9-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-9-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>L</span><span>o</span><span>s</span><span>&#160;</span><span>A</span><span>n</span><span>g</span><span>e</span><span>l</span><span>e</span><span>s</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>L</span><span>o</span><span>s</span><span>&#160;</span><span>A</span><span>n</span><span>g</span><span>e</span><span>l</span><span>e</span><span>s</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-7">
-                    <div class="thumbnail-custom-2"><img src="images/index-10-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-10-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>C</span><span>a</span><span>n</span><span>c</span><span>u</span><span>n</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>C</span><span>a</span><span>n</span><span>c</span><span>u</span><span>n</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-8">
-                    <div class="thumbnail-custom-2"><img src="images/index-11-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-11-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>S</span><span>e</span><span>y</span><span>c</span><span>h</span><span>e</span><span>l</span><span>l</span><span>e</span><span>s</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>S</span><span>e</span><span>y</span><span>c</span><span>h</span><span>e</span><span>l</span><span>l</span><span>e</span><span>s</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-9">
-                    <div class="thumbnail-custom-2"><img src="images/index-12-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-12-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>E</span><span>g</span><span>y</span><span>p</span><span>t</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>E</span><span>g</span><span>y</span><span>p</span><span>t</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-10">
-                    <div class="thumbnail-custom-2"><img src="images/index-13-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-13-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>M</span><span>o</span><span>r</span><span>o</span><span>c</span><span>c</span><span>o</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>M</span><span>o</span><span>r</span><span>o</span><span>c</span><span>c</span><span>o</span></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="cell-xs-6 cell-sm-4 cell-md-3 cell-md-push-11">
-                    <div class="thumbnail-custom-2"><img src="images/index-14-512x270.jpg" alt="" width="512" height="270"/>
+                    <div class="thumbnail-custom-2"><img src="<?= base_url('homeassets/') ?>images/index-14-512x270.jpg" alt="" width="512" height="270"/>
                         <div class="caption">
-                            <div class="h4"><a href="vacation_1.html"><span>I</span><span>t</span><span>a</span><span>l</span><span>y</span></a></div>
+                            <div class="h4"><a href="<?= base_url('home/vacation') ?>"><span>I</span><span>t</span><span>a</span><span>l</span><span>y</span></a></div>
                         </div>
                     </div>
                 </div>
@@ -273,67 +273,67 @@
                 <!-- Owl Carousel-->
                 <div data-items="1" data-xs-items="1" data-sm-items="2" data-md-items="3" data-stage-padding="15" data-loop="false" data-margin="30" data-nav="true" class="owl-carousel">
                     <div class="owl-item">
-                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="images/index-15-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="<?= base_url('homeassets/') ?>images/index-15-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Princess Cruises</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">1,285</div><a href="bahamas_cruises.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,285</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="images/index-16-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="<?= base_url('homeassets/') ?>images/index-16-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Princess Consuella</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">4,285</div><a href="bahamas_cruises.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">4,285</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="images/index-17-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="<?= base_url('homeassets/') ?>images/index-17-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Legend Cruises</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">1,985</div><a href="bahamas_cruises.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,985</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="images/index-15-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="<?= base_url('homeassets/') ?>images/index-15-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Princess Cruises</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">1,285</div><a href="bahamas_cruises.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,285</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="images/index-16-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="<?= base_url('homeassets/') ?>images/index-16-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Princess Consuella</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">4,285</div><a href="bahamas_cruises.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">4,285</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                     <div class="owl-item">
-                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="images/index-17-370x370.jpg" alt="" width="370" height="370"/>
+                        <div class="thumbnail-custom thumbnail-custom-variant-1"><img src="<?= base_url('homeassets/') ?>images/index-17-370x370.jpg" alt="" width="370" height="370"/>
                             <div class="caption">
                                 <div class="h5">-35%</div>
                                 <h4>Legend Cruises</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">1,985</div><a href="bahamas_cruises.html" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,985</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="cell-xs-12 offset-top-50 text-center"><a href="cruises.html" data-text="All cruises" class="btn btn-xs btn-winona btn-transparent-2">All cruises</a></div>
+                <div class="cell-xs-12 offset-top-50 text-center"><a href="<?= base_url('home/cruises') ?>" data-text="All cruises" class="btn btn-xs btn-winona btn-transparent-2">All cruises</a></div>
             </div>
         </div>
     </section>
@@ -345,12 +345,12 @@
                 <div class="cell-md-6">
                     <div class="unit unit-xs unit-xs-horizontal unit-spacing-xs">
                         <div class="unit-left">
-                            <div class="round img-auto"><img src="images/index-18-84x84.jpg" alt="" width="84" height="84" class="round-green"></div>
+                            <div class="round img-auto"><img src="<?= base_url('homeassets/') ?>images/index-18-84x84.jpg" alt="" width="84" height="84" class="round-green"></div>
                         </div>
                         <div class="unit-body">
                             <blockquote class="quote">
                                 <p>
-                                    <q>"I will use Mango Travel again! I've told all my friends how great these guys are and how great is the service they provide."</q>
+                                    <q>"I will use Fun Travel again! I've told all my friends how great these guys are and how great is the service they provide."</q>
                                 </p>
                                 <p>
                                     <cite>- Monica</cite>
@@ -363,12 +363,12 @@
                 <div class="cell-md-6 offset-top-50 offset-md-top-0">
                     <div class="unit unit-xs unit-xs-horizontal unit-spacing-xs">
                         <div class="unit-left">
-                            <div class="round img-auto"><img src="images/index-19-84x84.jpg" alt="" width="84" height="84" class="round-green"></div>
+                            <div class="round img-auto"><img src="<?= base_url('homeassets/') ?>images/index-19-84x84.jpg" alt="" width="84" height="84" class="round-green"></div>
                         </div>
                         <div class="unit-body">
                             <blockquote class="quote">
                                 <p>
-                                    <q>"We had an unforgettable Travel experience with Mango travel. Great personalized service! Do not hesitate to use Mango travel. Highly recommend."</q>
+                                    <q>"We had an unforgettable Travel experience with Fun travel. Great personalized service! Do not hesitate to use Fun travel. Highly recommend."</q>
                                 </p>
                                 <p>
                                     <cite>- Chandler</cite>
@@ -378,7 +378,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cell-xs-12 text-center offset-top-50"><a href="testimonials.html" data-text="All Testimonials" class="btn btn-xs btn-winona btn-orange-3">All Testimonials</a></div>
+                <div class="cell-xs-12 text-center offset-top-50"><a href="<?= base_url('home/testimonials') ?>" data-text="All Testimonials" class="btn btn-xs btn-winona btn-orange-3">All Testimonials</a></div>
             </div>
         </div>
     </section>
