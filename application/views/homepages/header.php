@@ -40,33 +40,33 @@
                                         <li class="active"><a href="<?= base_url() ?>"><span class="material-icons-room icon icon-white icon-lg"></span><span>TRAVEL</span><span class="triangle"></span></a>
                                             <!-- RD Navbar Dropdown-->
                                             <ul class="rd-navbar-dropdown">
-                                                <li><a href="<?= base_url('home/family_vacations') ?>">Travels Family</a></li>
-                                                <li><a href="<?= base_url('home/vacations') ?>">Travels Packages</a></li>
-                                                <li><a href="<?= base_url('home/offers') ?>">Best Offers/Hot Travel</a></li>
-                                                <li><a href="<?= base_url('home/vacation') ?>">Travels Detail</a></li>
+                                                <li><a href="<?= base_url('family_vacations') ?>">Travels Family</a></li>
+                                                <li><a href="<?= base_url('vacations') ?>">Travels Packages</a></li>
+                                                <li><a href="<?= base_url('offers') ?>">Best Offers/Hot Travel</a></li>
+                                                <li><a href="<?= base_url('vacation') ?>">Travels Detail</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="<?= base_url('home/destinations') ?>"><span class="material-icons-business icon icon-white icon-lg"></span><span>destinations</span><span class="triangle"></span></a>
+                                            <a href="<?= base_url('destinations') ?>"><span class="material-icons-business icon icon-white icon-lg"></span><span>destinations</span><span class="triangle"></span></a>
                                         </li>
-                                        <li><a href="<?= base_url('home/cruises') ?>"><span class="material-icons-directions_boat icon icon-white icon-lg"></span><span>cruises</span><span class="triangle"></span></a>
+                                        <li><a href="<?= base_url('cruises') ?>"><span class="material-icons-directions_boat icon icon-white icon-lg"></span><span>cruises</span><span class="triangle"></span></a>
                                             <ul class="rd-navbar-dropdown">
-                                                <li><a href="<?= base_url('home/search_cruises') ?>">Cruises Fillter</a></li>
-                                                <li><a href="<?= base_url('home/bahamas_cruises') ?>">Cruises Detail</a></li>
+                                                <li><a href="<?= base_url('search_cruises') ?>">Cruises Fillter</a></li>
+                                                <li><a href="<?= base_url('bahamas_cruises') ?>">Cruises Detail</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="<?= base_url('home/about') ?>"><span class="material-icons-group icon icon-white icon-lg"></span><span>about</span><span class="triangle"></span></a>
+                                        <li><a href="<?= base_url('about') ?>"><span class="material-icons-group icon icon-white icon-lg"></span><span>about</span><span class="triangle"></span></a>
                                             <ul class="rd-navbar-dropdown">
-                                                <li><a href="<?= base_url('home/testimonials') ?>">Testimonials</a></li>
+                                                <li><a href="<?= base_url('testimonials') ?>">Testimonials</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="<?= base_url('home/contact') ?>"><span class="material-icons-email icon icon-white icon-lg"></span><span>contacts</span><span class="triangle"></span></a>
+                                        <li><a href="<?= base_url('contact') ?>"><span class="material-icons-email icon icon-white icon-lg"></span><span>contacts</span><span class="triangle"></span></a>
                                             <ul class="rd-navbar-dropdown">
-                                                <li><a href="<?= base_url('home/bookings') ?>">Booking and Payment</a></li>
+                                                <li><a href="<?= base_url('bookings') ?>">Booking and Payment</a></li>
                                             </ul>
                                         </li>
                                     </ul>
-                                </div><a href="<?= base_url('home/contact') ?>" class="btn btn-orange-2 btn-lg btn-icon"><span class="icon icon-lg icon-white material-icons-location_on"></span><span>find us</span></a>
+                                </div><a href="<?= base_url('contact') ?>" class="btn btn-orange-2 btn-lg btn-icon"><span class="icon icon-lg icon-white material-icons-location_on"></span><span>find us</span></a>
                             </div>
                         </div>
                     </nav>

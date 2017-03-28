@@ -44,63 +44,63 @@
                 <div class="cell-sm-6 cell-md-4">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/cruises-2-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Caribbean Cruises</h4><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <h4>Caribbean Cruises</h4><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30 offset-sm-top-0">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/cruises-3-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Bahamas Cruises</h4><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <h4>Bahamas Cruises</h4><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30 offset-md-top-0">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/cruises-4-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Bermuda Cruises</h4><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <h4>Bermuda Cruises</h4><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/cruises-5-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Alaska Cruises</h4><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <h4>Alaska Cruises</h4><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/cruises-6-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Hawaii Cruises</h4><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <h4>Hawaii Cruises</h4><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/cruises-7-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Europe Cruises</h4><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <h4>Europe Cruises</h4><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/cruises-8-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Mexico Cruises</h4><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <h4>Mexico Cruises</h4><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/cruises-9-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Exotic Cruises</h4><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <h4>Exotic Cruises</h4><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/cruises-10-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>River Cruises</h4><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <h4>River Cruises</h4><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Princess Cruises</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">1,285</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,285</div><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Princess Consuella</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">4,285</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">4,285</div><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Legend Cruises</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">1,985</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,985</div><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -150,7 +150,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Princess Cruises</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">1,285</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,285</div><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Princess Consuella</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">4,285</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">4,285</div><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Legend Cruises</h4>
                                 <p>5 nights / 6 days</p>
-                                <div class="h4 price">1,985</div><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,985</div><a href="<?= base_url('bahamas_cruises') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cell-xs-12 text-center offset-top-50"><a href="<?= base_url('home/testimonials') ?>" data-text="All Testimonials" class="btn btn-xs btn-winona btn-orange-3">All Testimonials</a></div>
+                <div class="cell-xs-12 text-center offset-top-50"><a href="<?= base_url('testimonials') ?>" data-text="All Testimonials" class="btn btn-xs btn-winona btn-orange-3">All Testimonials</a></div>
             </div>
         </div>
     </section>

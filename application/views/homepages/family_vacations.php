@@ -83,7 +83,7 @@
                             <h4>Secrets Puerto Los Cabos Golf &amp; Spa Resort</h4>
                             <p>3 nights from</p>
                             <div class="h4 price">1,285</div>
-                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                             <h4>Santa Lucia Del Palma</h4>
                             <p>4 nights from</p>
                             <div class="h4 price">1,085</div>
-                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                             <h4>The Ritz-Carlton Grand Cayman</h4>
                             <p>4 nights from</p>
                             <div class="h4 price">1,085</div>
-                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                             <h4>Combato de Rivalde</h4>
                             <p>4 nights from</p>
                             <div class="h4 price">1,085</div>
-                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                             <h4>Wanders del Pareo</h4>
                             <p>4 nights from</p>
                             <div class="h4 price">1,085</div>
-                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                             <h4>Villa Devil</h4>
                             <p>4 nights from</p>
                             <div class="h4 price">1,085</div>
-                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                             <h4>Calla der Wolves</h4>
                             <p>4 nights from</p>
                             <div class="h4 price">1,085</div>
-                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,7 @@
                             <h4>Perkeleste la Plata</h4>
                             <p>4 nights from</p>
                             <div class="h4 price">1,085</div>
-                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                            <p>Book by: Dec-10-2015</p><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                         </div>
                     </div>
                 </div>

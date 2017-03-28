@@ -11,7 +11,7 @@
                             <div class="h5">-35%</div>
                             <h4>Barcelona</h4>
                             <p>2 nights + Flight + 4*Hotel</p>
-                            <div class="h4 price">400</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <div class="h4 price">400</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                             <div class="h5">-35%</div>
                             <h4>New York</h4>
                             <p>1 night + Flight + 5*Hotel</p>
-                            <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <div class="h4 price">1,600</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                             <div class="h5">-35%</div>
                             <h4>Los Angeles </h4>
                             <p>3 nights + Flight + 4*Hotel</p>
-                            <div class="h4 price">1,100</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <div class="h4 price">1,100</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                             <div class="h5">-35%</div>
                             <h4>Madrid</h4>
                             <p>1 night + Flight + 5*Hotel</p>
-                            <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <div class="h4 price">1,600</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                             <div class="h5">-35%</div>
                             <h4>Mexico</h4>
                             <p>1 night + Flight + 5*Hotel</p>
-                            <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <div class="h4 price">1,600</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                             <div class="h5">-35%</div>
                             <h4>Paris</h4>
                             <p>3 nights + Flight + 4*Hotel</p>
-                            <div class="h4 price">1,100</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <div class="h4 price">1,100</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                             <div class="h5">-35%</div>
                             <h4>Berlin</h4>
                             <p>1 night + Flight + 5*Hotel</p>
-                            <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <div class="h4 price">1,600</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                             <div class="h5">-35%</div>
                             <h4>Warsaw</h4>
                             <p>1 night + Flight + 5*Hotel</p>
-                            <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <div class="h4 price">1,600</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                             <div class="h5">-35%</div>
                             <h4>Birmingham</h4>
                             <p>3 nights + Flight + 4*Hotel</p>
-                            <div class="h4 price">1,100</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                            <div class="h4 price">1,100</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Mexico</h4>
                                 <p>1 night + Flight + 5*Hotel</p>
-                                <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,600</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>London</h4>
                                 <p>1 night + Flight + 5*Hotel</p>
-                                <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,600</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Paris</h4>
                                 <p>3 nights + Flight + 4*Hotel</p>
-                                <div class="h4 price">1,100</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,100</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Mexico</h4>
                                 <p>1 night + Flight + 5*Hotel</p>
-                                <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,600</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>London</h4>
                                 <p>1 night + Flight + 5*Hotel</p>
-                                <div class="h4 price">1,600</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,600</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                                 <div class="h5">-35%</div>
                                 <h4>Paris</h4>
                                 <p>3 nights + Flight + 4*Hotel</p>
-                                <div class="h4 price">1,100</div><a href="<?= base_url('home/vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
+                                <div class="h4 price">1,100</div><a href="<?= base_url('vacation') ?>" data-text="buy a tour" class="btn btn-winona btn-transparent btn-xs">buy a tour</a>
                             </div>
                         </div>
                     </div>

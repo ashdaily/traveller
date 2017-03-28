@@ -114,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cell-xs-12 text-center offset-top-50"><a href="<?= base_url('home/testimonials') ?>" data-text="All Testimonials" class="btn btn-xs btn-winona btn-orange-3">All Testimonials</a></div>
+                <div class="cell-xs-12 text-center offset-top-50"><a href="<?= base_url('testimonials') ?>" data-text="All Testimonials" class="btn btn-xs btn-winona btn-orange-3">All Testimonials</a></div>
             </div>
         </div>
     </section>

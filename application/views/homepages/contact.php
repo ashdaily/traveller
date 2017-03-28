@@ -17,7 +17,7 @@
         <div class="shell text-center">
             <h2>contact us</h2>
             <h6 class="text-primary tt-n offset-top-24">If you can't find an answer or need to reach us, feel free to contact us.</h6><a href="callto:#" class="reveal-inline-block font-sec txt-base offset-top-17"><span class="material-icons-phone icon icon-md icon-primary"></span> <span>Call our experts at + 389 091554</span></a>
-            <p class="offset-top-8 address">Fun Travel Agency 14211  Happy street Parkway NY City Beach US 32413</p><a href="mailto:#" class="reveal-block offset-top-13">info@demolink.org</a>
+            <p class="offset-top-8 address">Fun Travel Agency 14211  Happy street Parkway NY City Beach US 32413</p><a href="mailto:#" class="reveal-block offset-top-13">info@funtravel.com</a>
             <div class="hr-1 offset-top-64"></div>
         </div>
     </section>

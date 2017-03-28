@@ -107,42 +107,42 @@
                 <div class="cell-sm-6 cell-md-4">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/vacations-1-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>All-inclusive Vacations</h4><a href="<?= base_url('home/family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
+                            <h4>All-inclusive Vacations</h4><a href="<?= base_url('family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30 offset-sm-top-0">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/vacations-2-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Family Vacations</h4><a href="<?= base_url('home/family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
+                            <h4>Family Vacations</h4><a href="<?= base_url('family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30 offset-md-top-0">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/vacations-3-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Adults Only Vacations</h4><a href="<?= base_url('home/family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
+                            <h4>Adults Only Vacations</h4><a href="<?= base_url('family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/vacations-4-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Luxury Vacations</h4><a href="<?= base_url('home/family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
+                            <h4>Luxury Vacations</h4><a href="<?= base_url('family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/vacations-5-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Cruise Vacations</h4><a href="<?= base_url('home/family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
+                            <h4>Cruise Vacations</h4><a href="<?= base_url('family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="cell-sm-6 cell-md-4 offset-top-30">
                     <div class="thumbnail-custom thumbnail-custom-variant-2"><img src="<?= base_url('homeassets/') ?>images/vacations-6-370x370.jpg" alt="" width="370" height="370"/>
                         <div class="caption">
-                            <h4>Wedding and Honeymoon Vacations</h4><a href="<?= base_url('home/family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
+                            <h4>Wedding and Honeymoon Vacations</h4><a href="<?= base_url('family_vacations') ?>" data-text="read more" class="btn btn-winona btn-transparent btn-xs">read more</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                             <div class="caption"><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span>
                                 <h4>Secrets Puerto Los Cabos Golf &amp; Spa Resort</h4>
                                 <p>3 nights from</p>
-                                <div class="h4 price">1,285</div><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                                <div class="h4 price">1,285</div><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                             <div class="caption"><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span>
                                 <h4>Santa Lucia Del Palma</h4>
                                 <p>4 nights from</p>
-                                <div class="h4 price">1,085</div><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                                <div class="h4 price">1,085</div><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                             <div class="caption"><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span>
                                 <h4>Palermo de Comatimente</h4>
                                 <p>5 nights from</p>
-                                <div class="h4 price">885</div><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                                <div class="h4 price">885</div><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                             </div>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                             <div class="caption"><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span>
                                 <h4>Secrets Puerto Los Cabos Golf &amp; Spa Resort</h4>
                                 <p>4 nights from</p>
-                                <div class="h4 price">1,285</div><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                                <div class="h4 price">1,285</div><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                             </div>
                         </div>
                     </div>
@@ -197,7 +197,7 @@
                             <div class="caption"><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span>
                                 <h4>Santa Lucia Del Palma</h4>
                                 <p>4 nights from</p>
-                                <div class="h4 price">1,085</div><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                                <div class="h4 price">1,085</div><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                             <div class="caption"><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span><span class="material-icons-star icon icon-xs icon-white"></span>
                                 <h4>Palermo de Comatimente</h4>
                                 <p>5 nights from</p>
-                                <div class="h4 price">885</div><a href="<?= base_url('home/vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
+                                <div class="h4 price">885</div><a href="<?= base_url('vacation') ?>" data-text="see more" class="btn btn-winona btn-transparent btn-xs">see more</a>
                             </div>
                         </div>
                     </div>
@@ -255,7 +255,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cell-xs-12 text-center offset-top-50"><a href="<?= base_url('home/testimonials') ?>" data-text="All Testimonials" class="btn btn-xs btn-winona btn-orange-3">All Testimonials</a></div>
+                <div class="cell-xs-12 text-center offset-top-50"><a href="<?= base_url('testimonials') ?>" data-text="All Testimonials" class="btn btn-xs btn-winona btn-orange-3">All Testimonials</a></div>
             </div>
         </div>
     </section>

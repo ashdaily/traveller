@@ -69,12 +69,12 @@
                 <div class="range">
                     <div class="cell-sm-4"><img src="<?= base_url('homeassets/') ?>images/search_cruise-1-370x370.jpg" alt="" width="370" height="370"></div>
                     <div class="cell-sm-8">
-                        <h4><a href="<?= base_url('home/bahamas_cruises') ?>">7-night Caribbean Cruise from Fort<br class="veil reveal-lg-inline"> Lauderdale (Roundtrip)</a></h4>
+                        <h4><a href="<?= base_url('bahamas_cruises') ?>">7-night Caribbean Cruise from Fort<br class="veil reveal-lg-inline"> Lauderdale (Roundtrip)</a></h4>
                         <h6 class="txt-primary tt-n offset-top-14">Departure: Friday Dec. 10, 2015</h6>
                         <h6 class="txt-primary tt-n">Return: Monday Dec. 18, 2015</h6>
                         <p class="offset-top-10">This cruise will take you to some of the greatest hotspots stretching across the world's designated hotspot. Experience powder-sand beaches, dazzling blue waters and palm trees that seem to sway to a calypso beat.</p>
                         <h6 class="txt-primary offset-top-14 tt-n">From <span class="h4">$850</span>
-                        </h6><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="book now" class="btn btn-xs btn-winona btn-orange offset-top-21"><span>book now</span></a>
+                        </h6><a href="<?= base_url('bahamas_cruises') ?>" data-text="book now" class="btn btn-xs btn-winona btn-orange offset-top-21"><span>book now</span></a>
                     </div>
                 </div>
             </div>
@@ -82,12 +82,12 @@
                 <div class="range">
                     <div class="cell-sm-4"><img src="<?= base_url('homeassets/') ?>images/search_cruise-2-370x370.jpg" alt="" width="370" height="370"></div>
                     <div class="cell-sm-8">
-                        <h4><a href="<?= base_url('home/bahamas_cruises') ?>">Norwegian Cruise</a></h4>
+                        <h4><a href="<?= base_url('bahamas_cruises') ?>">Norwegian Cruise</a></h4>
                         <h6 class="txt-primary tt-n offset-top-14">Departure: Friday Dec. 10, 2015</h6>
                         <h6 class="txt-primary tt-n">Return: Monday Dec. 18, 2015</h6>
                         <p class="offset-top-10">Norwegian Cruise line has been operating since 1966 and is based in Florida. It offers a la carte dining options and variety of entertainment. Once onboard you will find a relaxed, casual atmosphere. This is an innovative and fun cruise.</p>
                         <h6 class="txt-primary offset-top-14 tt-n">From <span class="h4">$850</span>
-                        </h6><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="book now" class="btn btn-xs btn-winona btn-orange offset-top-21"><span>book now</span></a>
+                        </h6><a href="<?= base_url('bahamas_cruises') ?>" data-text="book now" class="btn btn-xs btn-winona btn-orange offset-top-21"><span>book now</span></a>
                     </div>
                 </div>
             </div>
@@ -95,12 +95,12 @@
                 <div class="range">
                     <div class="cell-sm-4"><img src="<?= base_url('homeassets/') ?>images/search_cruise-3-370x370.jpg" alt="" width="370" height="370"></div>
                     <div class="cell-sm-8">
-                        <h4><a href="<?= base_url('home/bahamas_cruises') ?>">Alaska Cruise</a></h4>
+                        <h4><a href="<?= base_url('bahamas_cruises') ?>">Alaska Cruise</a></h4>
                         <h6 class="txt-primary tt-n offset-top-14">Departure: Friday Dec. 10, 2015</h6>
                         <h6 class="txt-primary tt-n">Return: Monday Dec. 18, 2015</h6>
                         <p class="offset-top-10">The scenery in Alaska will have your jaw dropping, with its winding waterways,  diverse wildlife and rugged mountains, so make sure you have your camera handy.</p>
                         <h6 class="txt-primary offset-top-14 tt-n">From <span class="h4">$850</span>
-                        </h6><a href="<?= base_url('home/bahamas_cruises') ?>" data-text="book now" class="btn btn-xs btn-winona btn-orange offset-top-21"><span>book now</span></a>
+                        </h6><a href="<?= base_url('bahamas_cruises') ?>" data-text="book now" class="btn btn-xs btn-winona btn-orange offset-top-21"><span>book now</span></a>
                     </div>
                 </div>
             </div>
