@@ -31,7 +31,7 @@
     </head>
     <body class="page-body login-page login-form-fall" data-url="<?= base_url() ?>">
         <script type="text/javascript">
-            var baseurl = '<?= base_url() ?>admincontroller';
+            var baseurl = '<?= base_url() ?>';
         </script>
         <div class="login-container">
             <div class="login-header login-caret">
@@ -58,7 +58,7 @@ echo $_SESSION['data'];} ?>
                         <h3>Invalid login</h3>
                         <p>Enter <strong>demo</strong>/<strong>demo</strong> as login and password.</p>
                     </div>
-                    <form method="post" role="form" id="form_login" action="<?= base_url('/admincontroller/login_check') ?>">
+                    <form method="post" role="form" id="form_login">
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-addon">
