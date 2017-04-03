@@ -61,6 +61,9 @@
                         <li class="<?php if($active == 'package'){echo 'active';} ?>">
                             <a href="<?= base_url('admin/package') ?>"><i class="entypo-monitor"></i><span class="title">Manage Package</span></a>
                         </li>
+                        <li class="<?php if($active == 'foreignExchange'){echo 'active';} ?>">
+                            <a href="<?= base_url('admin/foreignExchange') ?>"><i class="entypo-monitor"></i><span class="title">Foreign Exchange Rates</span></a>
+                        </li>
 <!--                        <li class="has-sub">
                             <a href="layouts/layout-api/index.html"><i class="entypo-layout"></i><span class="title">Layouts</span></a>
                             <ul>

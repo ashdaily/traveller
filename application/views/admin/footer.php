@@ -4,8 +4,8 @@
             <strong></strong>
         </a>
     </div>
-    &copy; 2017 <strong>Neon</strong> Admin Theme by 
-    <a href="#" target="">Jitesh</a>
+    &copy; 2012 <strong>Made with <i style='font-size:20px;color:red;' class='entypo-heart'></i></strong>  
+    <a href="#" target="">in INDIA</a>
 </footer>
 </div>
 <div id="chat" class="fixed" data-current-user="Art Ramadani" data-order-by-status="1" data-max-chat-history="25">

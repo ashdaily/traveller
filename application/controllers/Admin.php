@@ -22,6 +22,7 @@ class Admin extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('package');
+        $this->load->model('foreignExchange');
     }
 
     public function index() {
@@ -134,5 +135,44 @@ class Admin extends CI_Controller {
         $this->session->sess_destroy();
         redirect('admin/login', 'refresh');
     }
+
+
+    //Foreign Exchange Rates 
+    public function foreignExchange(){
+        $this->load->library('Simple_html_dom'); 
+        $html = new Simple_html_dom();
+        $html->load_file('http://www.x-rates.com/table/?from=JPY&amount=1');
+        $info = $html->find('table.ratesTable td a'); 
+        $currency_names = $html->find('table.ratesTable tr td');
+        $noc = array(); //all the currency data stored
+        foreach($currency_names as $row){   
+            $noc[] = $row->plaintext;  
+        }
+        if (!isset($_SESSION['username'])) {
+            redirect('admin/login', 'refresh');
+        }else{
+            if(isset($_POST['submit'])){
+                $values = array(
+                    'sell'=>$this->input->post('sell'),
+                    'buy' => $this->input->post('buy') 
+                    ); 
+                $this->foreignExchange->enter_profit($values);
+                $currency['profit'] = $this->foreignExchange->get_profit();
+                $currency['noc'] = $noc;
+                $data['active'] = 'foreignExchange';
+                $this->load->view('admin/header', $data);
+                $this->load->view('admin/foreignExchange',$currency);
+                $this->load->view('admin/footer');
+            }else{ 
+                $currency['profit'] = $this->foreignExchange->get_profit();
+                $currency['noc'] = $noc;
+                $data['active'] = 'foreignExchange'; 
+                $this->load->view('admin/header', $data); 
+                $this->load->view('admin/foreignExchange',$currency);
+                $this->load->view('admin/footer');
+            }
+        } 
+    }
+
 
 }

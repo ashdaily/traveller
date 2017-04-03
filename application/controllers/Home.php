@@ -79,15 +79,15 @@ class Home extends CI_Controller {
         $this->load->view('homepages/footer');
     }
     
-    public function cruises() {
+    public function moneyExchange() {
         $this->load->view('homepages/header');
-        $this->load->view('homepages/cruises');
+        $this->load->view('homepages/moneyExchage');
         $this->load->view('homepages/footer');
     }
     
-    public function search_cruises() {
+    public function moneyExchageRates() {
         $this->load->view('homepages/header');
-        $this->load->view('homepages/search_cruises');
+        $this->load->view('homepages/moneyExchangeRates');
         $this->load->view('homepages/footer');
     }
     

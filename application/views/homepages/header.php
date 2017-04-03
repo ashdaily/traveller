@@ -49,10 +49,10 @@
                                         <li>
                                             <a href="<?= base_url('destinations') ?>"><span class="material-icons-business icon icon-white icon-lg"></span><span>destinations</span><span class="triangle"></span></a>
                                         </li>
-                                        <li><a href="<?= base_url('cruises') ?>"><span class="material-icons-directions_boat icon icon-white icon-lg"></span><span>cruises</span><span class="triangle"></span></a>
+                                        <li><a href="<?= base_url('money-exchange') ?>"><span class="material-icons-directions_boat icon icon-white icon-lg"></span><span>Foreign Exchange</span><span class="triangle"></span></a>
                                             <ul class="rd-navbar-dropdown">
-                                                <li><a href="<?= base_url('search_cruises') ?>">Cruises Fillter</a></li>
-                                                <li><a href="<?= base_url('bahamas_cruises') ?>">Cruises Detail</a></li>
+                                                <li><a href="<?= base_url('moneyExchangeRates') ?>">Our Exchange Rates</a></li>
+                                                <li><a href="<?= base_url('bookCurrenyExchange') ?>">Book Currency Exchange</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="<?= base_url('about') ?>"><span class="material-icons-group icon icon-white icon-lg"></span><span>about</span><span class="triangle"></span></a>
@@ -65,6 +65,8 @@
                                                 <li><a href="<?= base_url('bookings') ?>">Booking and Payment</a></li>
                                             </ul>
                                         </li>
+
+
                                     </ul>
                                 </div><a href="<?= base_url('contact') ?>" class="btn btn-orange-2 btn-lg btn-icon"><span class="icon icon-lg icon-white material-icons-location_on"></span><span>find us</span></a>
                             </div>
