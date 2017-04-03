@@ -21,13 +21,15 @@ class Admin extends CI_Controller {
      */
     public function __construct() {
         parent::__construct();
+        $this->load->model('package');
     }
 
     public function index() {
         if (!isset($_SESSION['username'])) {
             redirect('admin/login', 'refresh');
         }
-        $this->load->view('admin/header');
+        $data['active'] = 'dashboard';
+        $this->load->view('admin/header', $data);
         $this->load->view('admin/dashboard');
         $this->load->view('admin/footer');
     }
@@ -41,9 +43,10 @@ class Admin extends CI_Controller {
 
     public function login_check() {
         $username = $this->input->post('username');
-        $password = md5($this->input->post('password'));
-        $check = $this->db->get_where('admin', array('username' => $username, 'password' => $password));
-        if (count($check) > 0) {
+        $password = $this->input->post('password');
+        $query = $this->db->get('admin');
+        $check = $query->result();
+        if ($check[0]->username == $username && $check[0]->password == $password) {
             $this->session->username = $username;
             $data['login_status'] = 'success';
             echo json_encode($data);
@@ -53,10 +56,78 @@ class Admin extends CI_Controller {
         }
     }
 
-    public function package($type = '', $id = '') {
-        $this->load->view('admin/header');
+    public function showAllPackage() {
+        $result = $this->package->showAllPackage();
+        echo json_encode($result);
+    }
+
+    public function getAllContinents() {
+        $result = $this->package->getAllContinents();
+        echo json_encode($result);
+    }
+
+    public function getAllCity() {
+        $result = $this->package->getAllCity();
+        echo json_encode($result);
+    }
+
+    public function getAllCountry() {
+        $result = $this->package->getAllCountry();
+        echo json_encode($result);
+    }
+
+    public function getCountry() {
+        $result = $this->package->getCountry();
+        echo json_encode($result);
+    }
+
+    public function getCity() {
+        $result = $this->package->getCity();
+        echo json_encode($result);
+    }
+
+    public function package() {
+        if (!isset($_SESSION['username'])) {
+            redirect('admin/login', 'refresh');
+        }
+        $data['active'] = 'package';
+        $this->load->view('admin/header', $data);
         $this->load->view('admin/package');
         $this->load->view('admin/footer');
+    }
+
+    public function addPackage() {
+        $result = $this->package->addPackage();
+        $msg['success'] = false;
+        $msg['type'] = 'add';
+        if ($result) {
+            $msg['success'] = true;
+        }
+        echo json_encode($msg);
+    }
+
+    public function editPackage() {
+        $result = $this->package->editPackage();
+        echo json_encode($result);
+    }
+
+    public function updatePackage() {
+        $result = $this->package->updatePackage();
+        $msg['success'] = false;
+        $msg['type'] = 'update';
+        if ($result) {
+            $msg['success'] = true;
+        }
+        echo json_encode($msg);
+    }
+
+    public function deletePackage() {
+        $result = $this->package->deletePackage();
+        $msg['success'] = false;
+        if ($result) {
+            $msg['success'] = true;
+        }
+        echo json_encode($msg);
     }
 
     public function logout() {

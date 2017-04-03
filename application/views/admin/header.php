@@ -35,7 +35,7 @@
                     <header class="logo-env">
                         <!-- logo -->
                         <div class="logo">
-                            <a href="dashboard/main/index.html">
+                            <a href="#">
                                 <img src="<?= base_url() ?>assets/images/logo%402x.png" width="120" alt="" />
                             </a>
                         </div>
@@ -55,59 +55,13 @@
                         </div>
                     </header>
                     <ul id="main-menu" class="main-menu">
-                        <li class="has-sub">
-                            <a href="dashboard/main/index.html"><i class="entypo-gauge"></i><span class="title">Dashboard</span></a>
-                            <ul>
-                                <li>
-                                    <a href="dashboard/main/index.html"><span class="title">Dashboard 1</span></a>
-                                </li>
-                                <li>
-                                    <a href="dashboard/main-2/index.html"><span class="title">Dashboard 2</span></a>
-                                </li>
-                                <li>
-                                    <a href="dashboard/main-3/index.html"><span class="title">Dashboard 3</span></a>
-                                </li>
-                                <li class="has-sub">
-                                    <a href="skins/black/index.html"><span class="title">Skins</span></a>
-                                    <ul>
-                                        <li>
-                                            <a href="skins/black/index.html"><span class="title">Black Skin</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="skins/white/index.html"><span class="title">White Skin</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="skins/purple/index.html"><span class="title">Purple Skin</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="skins/cafe/index.html"><span class="title">Cafe Skin</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="skins/red/index.html"><span class="title">Red Skin</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="skins/green/index.html"><span class="title">Green Skin</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="skins/yellow/index.html"><span class="title">Yellow Skin</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="skins/blue/index.html"><span class="title">Blue Skin</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="skins/facebook/index.html"><span class="title">Facebook Skin</span><span class="badge badge-secondary badge-roundless">New</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="dashboard/highlights/index.html"><span class="title">What's New</span><span class="badge badge-success badge-roundless">v2.0</span></a>
-                                </li>
-                            </ul>
+                        <li class="<?php if($active == 'dashboard'){echo 'active';} ?>" >
+                            <a href="<?= base_url('admin') ?>"><i class="entypo-gauge"></i><span class="title">Dashboard</span></a>
                         </li>
-                        <li>
-                            <a href="<?= base_url('admin/package') ?>"><i class="entypo-monitor"></i><span class="title">Frontend</span></a>
+                        <li class="<?php if($active == 'package'){echo 'active';} ?>">
+                            <a href="<?= base_url('admin/package') ?>"><i class="entypo-monitor"></i><span class="title">Manage Package</span></a>
                         </li>
-                        <li class="has-sub">
+<!--                        <li class="has-sub">
                             <a href="layouts/layout-api/index.html"><i class="entypo-layout"></i><span class="title">Layouts</span></a>
                             <ul>
                                 <li>
@@ -425,7 +379,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -440,7 +394,7 @@
                                 <!-- add class "pull-right" if you want to place this from right -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="<?= base_url() ?>assets/images/thumb-1%402x.png" alt="" class="img-circle" width="44" />
-                                    John Henderson
+                                    Jerry
                                 </a>
                                 <ul class="dropdown-menu">
                                     <!-- Reverse Caret -->
@@ -637,7 +591,7 @@
                                         </ul>
                                     </li>
                                     <li class="external">
-                                        <a href="mailbox/main/index.html">All Messages</a>
+                                        <a href="#">All Messages</a>
                                     </li>
                                 </ul>
                             </li>
@@ -801,5 +755,5 @@
                     </div>
                 </div>
                 <hr />
-                
+
 
