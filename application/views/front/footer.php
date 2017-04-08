@@ -1,11 +1,4 @@
  
-<div class='container-fluid'>
-	<div class='col-xs-12'>
-		<div class=''
-	</div>
-</div> 
-
-
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
