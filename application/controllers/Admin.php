@@ -28,11 +28,12 @@ class Admin extends CI_Controller {
     public function index() {
         if (!isset($_SESSION['username'])) {
             redirect('admin/login', 'refresh');
-        }
-        $data['active'] = 'dashboard';
-        $this->load->view('admin/header', $data);
-        $this->load->view('admin/dashboard');
-        $this->load->view('admin/footer');
+        }else{
+            $data['active'] = 'dashboard';
+            $this->load->view('admin/header', $data);
+            $this->load->view('admin/dashboard');
+            $this->load->view('admin/footer');
+        }   
     }
 
     public function login() {

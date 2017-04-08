@@ -1,0 +1,431 @@
+   
+html,body{
+	overflow-x: hidden !important;
+}
+.nopad{
+	padding:0px !important;
+}
+.nomarg{
+	margin:0px !important;
+}
+.noborderradius{
+	border-radius: 0px !important;
+}
+.white-text{
+	color:#fff !important;
+}
+.sans{
+	font-family: 'bebas';
+}
+.sansa{
+	font-family: 'bebas-regular';
+}
+
+.marg5{
+	margin:5px !important;
+}
+.pad5{
+	padding:5px !important;
+}
+.marg10{
+	margin:10px !important;
+}
+.pad10{
+	padding:10px !important;
+}
+.marg15{
+	margin:15px !important;
+}
+.pad15{
+	padding:15px !important;
+}
+.pad20{
+	padding:20px !important;
+}
+.pad25{
+	padding:25px !important;
+}
+.pad30{
+	padding:30px !important;
+}
+.pad35{
+	padding:35px !important;
+}  
+.margintop100{
+	margin-top:100px;
+}
+.margintop75{
+	margin-top: 75px;
+}
+.margintop50{
+	margin-top: 50px;
+}
+.margintop35{
+	margin-top:35px;
+}
+.margintop20{
+	margin-top:20px;
+}
+.carrot{
+	color:#e74c3c;
+}
+.green{
+	color:#1abc9c;
+}
+ 
+@font-face {
+    font-family: bebas;
+    src: url(http://localhost/ft/assets/fonts/bebasneue_bold-webfont.woff);
+}
+@font-face{
+	font-family: bebas-regular;
+	src:url(http://localhost/ft/assets/fonts/bebasneue_regular-webfont.ttf);
+}
+
+
+
+/* Mobile screen below below ***********************************************************:*/ 
+
+
+@media (max-width: 768px) { 
+
+	.navbar{
+		height:60px;
+	}
+	 
+	.nav li a{
+		font-family:'bebas';
+		letter-spacing: 1px;
+		font-size:1.1em;
+	}
+	.navbar-brand{
+		padding:7px;
+	}
+	.navbar-brand{ 
+		margin-top:7px;
+		padding:7px;
+		color:#2ecc71 !important;
+		font-family: 'bebas';
+	}
+
+	.navbar-brand span{ 
+		border:3px solid #e74c3c;
+		padding:5px;
+	}
+	.navbar-form{
+		padding:9px;
+	}
+
+	#bs-example-navbar-collapse-1{
+		background: #fff !important;
+	}
+
+	
+	.search-fun-btn{
+		background: #e74c3c;
+		border-radius: 0px;
+		color:#fff;
+		font-family: 'bebas-regular';
+		letter-spacing: 1px;
+
+	}
+	.form-control:active{
+		border:none !important;
+	}
+	.form-control:focus{
+		border:none !important;
+	}
+	.btn-default:focus,.btn-default:active{
+		border:none !important;
+		border-color:transparent !important;
+	}
+	.flag{
+		height:10px;
+		display: inline;
+	}
+	.home-0{
+		padding:0px !important;
+	}
+	.home-2{
+		padding:0px !important;
+	}
+
+	.home-2 ul li a{
+		padding:10px 5px !important;
+		color:#2ecc71;
+	}
+	.home-2 ul li.active > a{
+		color:#e74c3c !important;
+		font-family: 'bebas';
+	}
+
+
+}
+
+
+
+/* Tablet screen below below ***********************************************************:*/ 
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.navbar{
+		height:65px;
+	}
+	.nav > li{
+		padding:9px;
+	}
+	.nav li a{
+		font-family:'bebas';
+		letter-spacing: 1px;
+		font-size:1.1em;
+	}
+	.navbar-brand{
+		padding:7px;
+	}
+	.navbar-brand{ 
+		color:#2ecc71 !important;
+	}
+	.navbar-form{
+		padding:9px;
+	}
+
+	.navbar-brand span{
+		border:3px solid #e74c3c;
+		padding:7px;
+	}
+
+	.search-fun-btn{
+		background: #e74c3c;
+		border-radius: 0px;
+		color:#fff;
+		font-family: 'bebas-regular';
+		letter-spacing: 1px;
+
+	}
+	.form-control:active{
+		border:none !important;
+	}
+	.form-control:focus{
+		border:none !important;
+	}
+	.btn-default:focus,.btn-default:active{
+		border:none !important;
+		border-color:transparent !important;
+	}
+	.flag{
+		height:10px;
+		display: inline;
+	}
+	.home-2 ul li a{
+		padding:10px 5px !important;
+		color:#2ecc71;
+	}
+	.home-2 ul li.active > a{
+		color:#e74c3c !important;
+		font-family: 'bebas';
+	}
+
+}
+
+
+/* Small Laptops and Desktops screen below  ***********************************************************:*/ 
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.navbar{
+		height:70px;
+	}
+	.nav > li{
+		padding:10px;
+	}
+
+	.nav li a{
+		font-family:'bebas-regular';
+		letter-spacing: 1px;
+		font-size:1.2em;
+	}
+
+	.navbar-brand{
+		padding:7px;
+	}
+
+	.navbar-brand{ 
+		color:#27ae60 !important;
+		font-size:1.8em;
+		font-family: 'bebas';
+	}
+
+	.navbar-form{
+		padding:10px;
+	}
+
+	.navbar-brand span{
+		border:3px solid #e74c3c;
+		padding:7px;
+	}
+
+	.search-fun-btn{
+		background: #e74c3c;
+		border-radius: 0px;
+		color:#fff;
+		font-family: 'bebas-regular';
+		letter-spacing: 1px;
+
+	}
+
+	.form-control:active{
+		border:none !important;
+	}
+
+	.form-control:focus{
+		border:none !important;
+	}
+
+	.btn-default:focus,.btn-default:active{
+		border:none !important;
+		border-color:transparent !important;
+	}
+
+	.flag{
+		height:12px;
+		display: inline;
+	}
+	.home-2 ul li a{
+		padding:10px 5px !important;
+		color:#2ecc71;
+	}
+	.home-2 ul li.active > a{
+		color:#e74c3c !important;
+		font-family: 'bebas';
+	}
+
+}
+
+
+/* 15 inches and above Laptops and Desktops screen below  ***********************************************************:*/ 
+
+
+@media (min-width:1200px) {
+
+	.navbar{
+		height:70px;
+	}
+	.nav > li{
+	padding:10px;
+	}
+	.nav li a{
+		font-family:'bebas-regular';
+		letter-spacing: 1px;
+		font-size:1.2em;
+
+	}
+	.navbar-brand{ 
+		color:#1abc9c !important;
+		font-size:1.8em;
+		font-family: 'bebas';
+	}
+	.navbar-brand span{
+		border:3px solid #e74c3c;
+		padding:7px;
+	}
+	.navbar-form{
+		padding:10px;
+	}
+	.search-fun-btn{
+		background: #e74c3c;
+		border-radius: 0px;
+		color:#fff;
+		font-family: 'bebas-regular';
+		letter-spacing: 1px;
+
+	}
+	.form-control:active{
+		border:none !important;
+	}
+	.form-control:focus{
+		border:none !important;
+	}
+	.btn-default:focus,.btn-default:active{
+		border:none !important;
+		border-color:transparent !important;
+	}
+	.flag{
+		height:12px;
+		display: inline;
+	}
+	.home-2 ul li a{
+		padding:10px 5px !important;
+		color:#1abc9c !important;
+		font-size:1.7em;
+		font-family: 'bebas-regular';
+		font-weight: 200;
+		letter-spacing: 2px;
+	}
+	
+	.home-2 ul li.active > a{
+		color:#fff !important;
+		font-family: 'bebas';
+	}
+
+	.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+		background:#1abc9c;
+		border-radius: 0px !important;
+	}
+
+	.form-group input{
+		border-radius: 0px !important; 
+		height:45px !important;
+	}	
+
+	.form-group select,.form-group option{
+		border-radius: 0px !important; 
+		height:45px !important;
+	}
+
+	.flight-form .input-group{
+		margin-top:35px;
+		font-family: 'bebas-regular';
+		letter-spacing: 2px;
+	}
+
+	.flight-form button{
+		background:#e74c3c;
+		color:#fff;
+		font-family: 'bebas-regular';
+		width: 100%;
+		padding:15px;
+		text-align: center;
+		font-size:1.6em;
+		letter-spacing: 3px;
+		border-radius: 0px !important;
+		margin-top:15%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 

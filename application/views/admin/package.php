@@ -6,7 +6,7 @@
                 <h4 class="modal-title text-center">Modal title</h4>
             </div>
             <div class="modal-body">
-                <form id="myForm" action="" method="post" class="form-horizontal" enctype="multipart/form-data">
+                <form id="myForm" action="<?php echo base_url();?>admin/addPackage" method="post" class="form-horizontal" enctype="multipart/form-data">
                     <div class="row">
                         <input type="hidden" name="txtId" value="0">
                         <div class="col-sm-6">
@@ -248,15 +248,16 @@
 
         //Add New
         $('#btnAdd').click(function () {
+            $('#myForm')[0].reset();
             $('#myModal').modal('show');
             $('#myModal').find('.modal-title').text('Add New Package');
-            $('#myForm').attr('action', '<?php echo base_url() ?>admin/addPackage');
+            
         });
 
         $('#btnSave').click(function () {
             var url = $('#myForm').attr('action');
             var data = $('#myForm').serialize();
-            $('#myForm').reset();
+            $('#myForm')[0].reset();
             $('#btnSave').show();
             //validate form
             var continent = $('select[name=continent_code]');
@@ -270,80 +271,10 @@
             var taxi_pickups = $('select[name=taxi_pickups]');
             var food = $('input[name=food]');
             var utilities = $('input[name=utilities]');
-            var result = 1;
-            if (continent.val() === '') {
-                alert('blank');
-                continent.parent().parent().addClass('has-error');
-            } else {
-                continent.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (country.val() === '') {
-                alert('blank');
-                country.parent().parent().addClass('has-error');
-            } else {
-                country.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (city.val() === '') {
-                alert('blank');
-                city.parent().parent().addClass('has-error');
-            } else {
-                city.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (package_name.val() === '') {
-                alert('blank');
-                package_name.parent().parent().addClass('has-error');
-            } else {
-                package_name.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (duration.val() === '') {
-                duration.parent().parent().addClass('has-error');
-            } else {
-                duration.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (description.val() === '') {
-                description.parent().parent().addClass('has-error');
-            } else {
-                description.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (mode_of_travel.val() === '') {
-                mode_of_travel.parent().parent().addClass('has-error');
-            } else {
-                mode_of_travel.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (price.val() === '') {
-                price.parent().parent().addClass('has-error');
-            } else {
-                price.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (taxi_pickups.val() === '') {
-                taxi_pickups.parent().parent().addClass('has-error');
-            } else {
-                taxi_pickups.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (food.val() === '') {
-                food.parent().parent().addClass('has-error');
-            } else {
-                food.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            if (utilities.val() === '') {
-                utilities.parent().parent().addClass('has-error');
-            } else {
-                utilities.parent().parent().removeClass('has-error');
-                result += 1;
-            }
-            alert(result);
+           
+            
 
-            if (result === 12) {
+           
                 $.ajax({
                     type: 'ajax',
                     method: 'post',
@@ -373,7 +304,7 @@
                         alert('Could not add data');
                     }
                 });
-            }
+            
         });
 
         //edit
