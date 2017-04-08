@@ -403,6 +403,59 @@ html,body{
 
 }
 
+/********** footer ********************/
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background: #00253d;
+    padding: 50px 0px 0px 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+footer .social-buttons a {
+    background-color: #1abc9c;
+    border-radius: 50%;
+    color: #fff;
+    width: 45px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+footer .links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+footer .links {
+    padding-top: 10px;
+}
+footer .custom-links {
+    padding-bottom: 30px;
+}
+
+footer .custom-links a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+    border-right: 2px solid #666;
+}
+
+footer .custom-links a:last-child {
+    border: none;
+}
+
+footer .custom-links {
+    padding-top: 20px;
+}
+
+footer .copyright {
+    padding: 10px 0 10px 0;
+    background: #1abc9c;
+}
 
 
 

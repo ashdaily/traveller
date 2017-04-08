@@ -3,6 +3,28 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Package extends CI_Model {
+    
+    public function showHomePackage(){
+        $this->db->select('*');
+        $this->db->select('tbl_packages.id as package_id');
+        $this->db->from('tbl_packages');
+        $this->db->select('city.name as city_name');
+        $this->db->join('city', 'city.id = tbl_packages.city_id');
+        $this->db->select('countries.name as contry_name');
+        $this->db->join('countries', 'city.countrycode = countries.iso3');
+        $this->db->select('continents.name as continent_name');
+        $this->db->join('continents', 'continents.code = tbl_packages.continent_code');
+        $this->db->order_by('tbl_packages.created_at', 'desc');
+        $this->db->limit(10);
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            return $query->result();
+        } else {
+            return false;
+        }
+    }
+
+    
 
     public function showAllPackage() {
         $this->db->select('*');
