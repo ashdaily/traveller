@@ -306,6 +306,7 @@ html,body{
 
 
 @media (min-width:1200px) {
+	/* nav bar and banner of homepage */
 
 	.navbar{
 		height:70px;
@@ -401,8 +402,142 @@ html,body{
 		margin-top:15%;
 	}
 
+	/* money transfer home page */
+	.moneytransfer{
+		background:url('http://localhost/funtravel/traveller/assets/front/images/western-union-banner.jpg') center no-repeat;
+		height:300px;
+		margin-bottom: 75px;
+	}
+	.home-3{
+		background: #e7e7e7;
+		margin-top:20px;
+		padding-bottom: 20px;
+	}
+	.home-3 h1{
+		font-size:45px; 
+		font-weight: 100;
+		font-family: 'bebas-regular';
+	}
+	.home-3 h1 span{
+		font-size: 15px;
+		letter-spacing:2px;
+	}
+
+
+	.home-4 h1{
+		font-size:45px; 
+		font-weight: 100;
+		font-family: 'bebas-regular';
+	}
+	.home-4 h1 span{
+		font-size: 15px;
+		letter-spacing:2px;
+	}
+
+	#carousel-example-generic{
+		margin-top:75px;
+		margin-bottom:75px;
+	}
+
+	.green-btn,.green-btn:focus{
+		background:#1abc9c;
+		border:none !important;
+		outline: none !important;
+		color:#fff;
+		font-weight: 300; 
+		font-family: 'bebas-regular';
+		border-radius: 0px !important;
+		font-size:25px;
+
+	}
+	.green-btn:hover,.green-btn:active{
+		background:#fff !important;
+		outline:1px solid #1abc9c !important;
+		color:#1abc9c !important;
+		font-family: 'bebas' !important;
+
+	}
+	.carrot-btn,.carrot-btn:focus{
+		background:#e74c3c;
+		border:none !important;
+		outline: none !important;
+		color:#fff;
+		font-weight: 300; 
+		font-family: 'bebas-regular';
+		border-radius: 0px !important;
+		font-size:25px;
+
+	}
+	.carrot-btn:hover,.carrot-btn:active{
+		background:#fff !important;
+		outline:1px solid #e74c3c !important;
+		color:#e74c3c !important;
+		font-family: 'bebas' !important;
+
+	}
+
+
+	 
+
+
+
+
+
 }
 
+/********** footer ********************/
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background: #00253d;
+    padding: 50px 0px 0px 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+footer .social-buttons a {
+    background-color: #1abc9c;
+    border-radius: 50%;
+    color: #fff;
+    width: 45px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+footer .links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+footer .links {
+    padding-top: 10px;
+}
+footer .custom-links {
+    padding-bottom: 30px;
+}
+
+footer .custom-links a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+    border-right: 2px solid #666;
+}
+
+footer .custom-links a:last-child {
+    border: none;
+}
+
+footer .custom-links {
+    padding-top: 20px;
+}
+
+footer .copyright {
+    padding: 10px 0 10px 0;
+    background: #1abc9c;
+}
 
 
 

@@ -174,6 +174,19 @@ class Admin extends CI_Controller {
             }
         } 
     }
+    public function flightBooking(){
+        $this->load->library('Simple_html_dom');
+        $html = new Simple_html_dom();
+        $html->load_file('http://www.skyscanner.jp/transport/flights/tyoa/del/170415/170507/airfares-from-tokyo-to-new-delhi-in-april-2017-and-may-2017.html?adults=1&children=0&adultsv2=1&childrenv2=&infants=0&cabinclass=economy&rtn=1&preferdirects=false&outboundaltsenabled=false&inboundaltsenabled=false&ref=home#results');
+        sleep(7);
+        $info = $html->find('.day-list-item'); 
+         
+        $noc = array(); //all the currency data stored
+        foreach($info as $row){   
+            $noc[] = $row->plaintext;  
+        }
+
+    }
 
 
 }
