@@ -13,6 +13,7 @@ class Home extends CI_Controller {
         $this->load->helper('url');
         $this->load->library('session');
         $this->load->model('package');
+        $this->load->model('users');
         $this->load->model('foreignExchange');
     }
 
@@ -29,6 +30,34 @@ class Home extends CI_Controller {
         $this->load->view('front/header', $data);
         $this->load->view('front/home');
         $this->load->view('front/footer');
+    }
+
+    public function package($package_name) {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $data['result'] = $this->package->package($package_name);
+        $data['msg'] = '';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/package', $data);
+        $this->load->view('front/footer');
+    }
+
+    public function customer_detail() {
+        $result = $this->users->customer_detail();
+        $this->load->library('email');
+        if ($result == TRUE) {
+            $this->email->from($this->input->post('c_email'), $this->input->post('c_f_name'));
+            $this->email->to('jitesh.goel26@gmail.com');
+            $this->email->subject('Booking Query');
+            $this->email->message('Testing the email class.');
+            if($this->email->send()){
+                $msg['success'] = true;
+            } else {
+                $msg['success'] = false;
+            }
+        } else {
+            $msg['success'] = false;
+        }
+        echo json_encode($msg);
     }
 
 }

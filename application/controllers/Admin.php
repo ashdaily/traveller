@@ -107,6 +107,15 @@ class Admin extends CI_Controller {
         }
         echo json_encode($msg);
     }
+    
+    public function addPackageImages() {
+        $result = $this->package->addPackageImages();
+        $msg['success'] = false;
+        if ($result) {
+            $msg['success'] = true;
+        }
+        echo json_encode($msg);
+    }
 
     public function editPackage() {
         $result = $this->package->editPackage();

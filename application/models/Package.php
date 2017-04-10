@@ -3,8 +3,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Package extends CI_Model {
-    
-    public function showHomePackage(){
+
+    public function showHomePackage() {
         $this->db->select('*');
         $this->db->select('tbl_packages.id as package_id');
         $this->db->from('tbl_packages');
@@ -23,8 +23,6 @@ class Package extends CI_Model {
             return false;
         }
     }
-
-    
 
     public function showAllPackage() {
         $this->db->select('*');
@@ -99,27 +97,11 @@ class Package extends CI_Model {
         $company_website = $this->input->post('company_website');
         $contact_person = $this->input->post('contact_person');
         if ($by_company == '' && $company_website == '' && $contact_person == '') {
-            $by_company = NULL;
-            $company_website = NULL;
-            $contact_person = NULL;
+            $by_company = '';
+            $company_website = '';
+            $contact_person = '';
         }
-        $images_name = "";
-//        if (is_array($_FILES)) {
-//            print_r($_FILES);die;
-//            foreach ($_FILES['package_images']['name'] as $name => $value) {
-//                $file_name = explode(".", $_FILES['package_images']['name'][$name]);
-//                $allowed_ext = array("jpg", "jpeg", "png", "gif");
-//                if (in_array($file_name[1], $allowed_ext)) {
-//                    $new_name = md5(rand()) . '.' . $file_name[1];
-//                    $sourcePath = $_FILES['package_images']['tmp_name'][$name];
-//                    $targetPath = "uploads/" . $new_name;
-//                    if (move_uploaded_file($sourcePath, $targetPath)) {
-//                        print_r($_FILES);die;
-//                    }
-//                }
-//            }
-//        }
-//        print_r($_FILES);die;
+        $images_name = '';
         $field = array(
             'continent_code' => $this->input->post('continent_code'),
             'countrycode' => $this->input->post('country_code'),
@@ -146,6 +128,61 @@ class Package extends CI_Model {
         }
     }
 
+    public function addPackageImages() {
+        $query = $this->db->select('*')->from('tbl_packages')->order_by('id', 'DESC')->limit(1)->get();
+        $result = $query->result();
+        $id = $result[0]->id;
+        if ($_FILES['files']['name'] != '') {
+            $sql = $this->db->select('*')->from('tbl_packages')->where('updated_at >', $result[0]->created_at)->order_by('updated_at', 'DESC')->limit(1)->get();
+            if ($sql->num_rows() > 0) {
+                $result1 = $sql->result();
+                $id = $result1[0]->id;
+                $images = $result1[0]->package_images;
+                if ($images != '') {
+                    $explode = explode(',', $images);
+                    for ($i = 0; $i < count($explode); $i++) {
+                        unlink('./upload/' . $explode[$i]);
+                    }
+                }
+            } else {
+                $images = $result[0]->package_images;
+                if ($images != '') {
+                    $explode = explode(',', $images);
+                    for ($i = 0; $i < count($explode); $i++) {
+                        unlink('./upload/' . $explode[$i]);
+                    }
+                }
+            }
+            $config["upload_path"] = './upload/';
+            $config["allowed_types"] = 'gif|jpg|png|jpeg';
+            $this->load->library('upload', $config);
+            $this->upload->initialize($config);
+            for ($count = 0; $count < count($_FILES["files"]["name"]); $count++) {
+                $_FILES["file"]["name"] = $_FILES["files"]["name"][$count];
+                $_FILES["file"]["type"] = $_FILES["files"]["type"][$count];
+                $_FILES["file"]["tmp_name"] = $_FILES["files"]["tmp_name"][$count];
+                $_FILES["file"]["error"] = $_FILES["files"]["error"][$count];
+                $_FILES["file"]["size"] = $_FILES["files"]["size"][$count];
+                if ($this->upload->do_upload('file')) {
+                    $data = $this->upload->data();
+                } else {
+                    return false;
+                }
+            }
+            $image = implode(',', $_FILES['files']['name']);
+            $field = array(
+                'package_images' => $image
+            );
+            $this->db->where('id', $id);
+            $this->db->update('tbl_packages', $field);
+            if ($this->db->affected_rows() > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }return true;
+    }
+
     public function editPackage() {
         $id = $this->input->get('id');
         $this->db->where('id', $id);
@@ -162,11 +199,10 @@ class Package extends CI_Model {
         $company_website = $this->input->post('company_website');
         $contact_person = $this->input->post('contact_person');
         if ($by_company == '' && $company_website == '' && $contact_person == '') {
-            $by_company = NULL;
-            $company_website = NULL;
-            $contact_person = NULL;
+            $by_company = '';
+            $company_website = '';
+            $contact_person = '';
         }
-        $images_name = '';
         $id = $this->input->post('txtId');
         $field = array(
             'continent_code' => $this->input->post('continent_code'),
@@ -180,7 +216,6 @@ class Package extends CI_Model {
             'taxi_pickups' => $this->input->post('taxi_pickups'),
             'food' => $this->input->post('food'),
             'utilities' => $this->input->post('utilities'),
-            'package_images' => $images_name,
             'by_company' => $by_company,
             'company_website' => $company_website,
             'contact_person' => $contact_person,
@@ -197,10 +232,39 @@ class Package extends CI_Model {
 
     public function deletePackage() {
         $id = $this->input->get('id');
+        $sql = $this->db->get_where('tbl_packages', array('id' => $id));
+        $result = $sql->result();
+        $images = $result[0]->package_images;
+        if ($images != '') {
+            $explode = explode(',', $images);
+            for ($i = 0; $i < count($explode); $i++) {
+                unlink('./upload/' . $explode[$i]);
+            }
+        }
         $this->db->where('id', $id);
         $this->db->delete('tbl_packages');
         if ($this->db->affected_rows() > 0) {
             return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function package($package_name = '') {
+        $p_name = humanize($package_name);
+        $this->db->select('*');
+        $this->db->select('tbl_packages.id as package_id');
+        $this->db->from('tbl_packages');
+        $this->db->select('city.name as city_name');
+        $this->db->join('city', 'city.id = tbl_packages.city_id');
+        $this->db->select('countries.name as contry_name');
+        $this->db->join('countries', 'city.countrycode = countries.iso3');
+        $this->db->select('continents.name as continent_name');
+        $this->db->join('continents', 'continents.code = tbl_packages.continent_code');
+        $this->db->where('tbl_packages.package_name', $p_name);
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            return $query->result();
         } else {
             return false;
         }
