@@ -33,15 +33,15 @@
 
 		
 		<br>
-		<table class="table table-bordered table-responsive">
+		<table class="table table-bordered table-responsive" style='width:80%;'>
 		<thead>
 			<tr>
 				<th>#</th>
 				<th>Currency Name</th>
 				<th>1 JPY =</th>
 				<th>Cost Per Unit in JPY</th>
-				<th>Sell Rate</th>
-				<th>Buy Rate</th>
+				<th>Sell Rate in JPY</th>
+				<th>Buy Rate in JPY</th>
 			</tr>
 		</thead>
 		
@@ -52,16 +52,16 @@
 
 		?>
 			<tr>
-				<td><?php echo $counter; ?></td>
+				<td><?php echo $counter; ?> </td>
 				<td><?php echo $noc[$i]; ?></td>
 				<td><?php echo $noc[$i+1]; ?></td>
-				<td><?php echo $noc[$i+2]; ?></td> 
-				<td>
+				<td>¥ <?php echo $noc[$i+2]; ?></td> 
+				<td>¥ 
 				<?php 
 					echo $noc[$i+2]+(($profit_sell*$noc[$i+2])/100);
 				?> 	
 				</td>
-				<td>
+				<td>¥ 
 					<?php 
 						echo $noc[$i+2]-(($profit_buy*$noc[$i+2])/100);
 					?> 

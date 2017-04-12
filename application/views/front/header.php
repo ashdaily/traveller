@@ -12,6 +12,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="<?php echo base_url();?>assets/front/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/front/css/owl.carousel.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/front/css/owl.theme.css" rel="stylesheet">
      
   </head>
   <body>

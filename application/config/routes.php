@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 //Home //
+$route['package/{:any}'] = 'home/package/$1';
 $route['about'] = 'home/about';
 $route['contact'] = 'home/contact';
 $route['bookings'] = 'home/bookings';
@@ -63,6 +64,7 @@ $route['money-exchange-rates'] = 'home/moneyExchangeRates';
 $route['bahamas_cruises'] = 'home/bahamas_cruises';
 $route['testimonials'] = 'home/testimonials';
 $route['default_controller'] = 'home';
+$route['customer_detail'] = 'home/customer_detail';
 
 //Admin //
 $route['admin'] = 'admin';

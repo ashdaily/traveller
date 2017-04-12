@@ -37,7 +37,7 @@
             <div class="login-header login-caret">
                 <div class="login-content">
                     <a href="<?= base_url() ?>/dashboard/main/index.html" class="logo">
-                        <img src="<?= base_url() ?>/assets/images/logo%402x.png" width="120" alt="" />
+                        <h3 style="color:#fff;">FUN TRAVEL</h3>
                     </a>
                     <p class="description">Dear user, log in to access the admin area!</p>
                     <!-- progress bar indicator --> 
