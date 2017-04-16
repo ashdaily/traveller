@@ -3,7 +3,8 @@
         <div class="container" style="transform: none;">
             <div class="row no-page">
                 <div class="col-sm-12 text-center">
-                    <h1 class="text-center">No Result Found</h1>
+                    <h1 class="sansa">404</h1>
+                    <h3 class="text-center">No Result Found</h3>
                     <a href="<?= base_url() ?>">Back To Home</a>
                 </div>
             </div>

@@ -83,18 +83,13 @@ class Flight extends CI_Model {
         }
     }
 
-    public function packages($package_name = '') {
-        $p_name = humanize($package_name);
+    public function searchflights() {
+        $to = $this->input->get('to');
+        $from = $this->input->get('from');
         $this->db->select('*');
-        $this->db->select('tbl_packages.id as package_id');
-        $this->db->from('tbl_packages');
-        $this->db->select('city.name as city_name');
-        $this->db->join('city', 'city.id = tbl_packages.city_id');
-        $this->db->select('countries.name as contry_name');
-        $this->db->join('countries', 'city.countrycode = countries.iso3');
-        $this->db->select('continents.name as continent_name');
-        $this->db->join('continents', 'continents.code = tbl_packages.continent_code');
-        $this->db->where('tbl_packages.package_name', $p_name);
+        $this->db->from('flights');
+        $this->db->where('flight_from', $from);
+        $this->db->where('flight_to', $to);
         $query = $this->db->get();
         if ($query->num_rows() > 0) {
             return $query->result();
@@ -102,11 +97,5 @@ class Flight extends CI_Model {
             return false;
         }
     }
-
-    public function get_c_users(){
-        $sql = $this->db->query('SELECT * from c_users');
-        return $sql->result();
-    }
-    
 
 }

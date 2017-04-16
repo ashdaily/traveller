@@ -16,6 +16,7 @@ class Home extends CI_Controller {
         $this->load->model('package');
         $this->load->model('users');
         $this->load->model('page');
+        $this->load->model('flight');
         $this->load->model('foreignExchange');
     }
 
@@ -78,12 +79,45 @@ class Home extends CI_Controller {
             $this->load->view('front/header', $data);
             $this->load->view('front/no_page_found', $data);
             $this->load->view('front/footer');
+        } else {
+            $data['result'] = $result;
+            $data['msg'] = '';
+            $this->load->view('front/header', $data);
+            $this->load->view('front/packages', $data);
+            $this->load->view('front/footer');
         }
-        $data['result'] = $result;
-        $data['msg'] = '';
-        $this->load->view('front/header', $data);
-        $this->load->view('front/packages', $data);
-        $this->load->view('front/footer');
+    }
+    
+    public function searchpackage() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Holiday Packages';
+        $result = $this->package->searchpackage();
+        if ($result == FALSE) {
+            $this->load->view('front/header', $data);
+            $this->load->view('front/no_page_found', $data);
+            $this->load->view('front/footer');
+        } else {
+            $data['result'] = $result;
+            $data['msg'] = '';
+            $this->load->view('front/header', $data);
+            $this->load->view('front/packages', $data);
+            $this->load->view('front/footer');
+        }
+    }
+    
+    public function searchflights() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Holiday Packages';
+        $result = $this->flight->searchflights();
+        if ($result == FALSE) {
+            $this->load->view('front/header', $data);
+            $this->load->view('front/no_page_found', $data);
+            $this->load->view('front/footer');
+        } else {
+            $data['result'] = $result;
+            $data['msg'] = '';
+            $this->load->view('front/header', $data);
+            $this->load->view('front/flights', $data);
+            $this->load->view('front/footer');
+        }
     }
 
     public function places($continent_code) {

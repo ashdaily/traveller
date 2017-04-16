@@ -319,8 +319,8 @@
                     for (i = 0; i < data.length; i++) {
                         html += '<tr>' +
                                 '<td>' + data[i].id + '</td>' +
-                                '<td>' + data[i].flight_to + '</td>' +
                                 '<td>' + data[i].flight_from + '</td>' +
+                                '<td>' + data[i].flight_to + '</td>' +
                                 '<td>' + data[i].flight_price + '</td>' +
                                 '<td>' + data[i].created_at + '</td>' +
                                 '<td>' + data[i].updated_at + '</td>' +

@@ -53,6 +53,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['package/(:any)'] = 'home/package/$1';
 $route['places/(:any)'] = 'home/places/$1';
 $route['packages/(:any)'] = 'home/packages/$1';
+$route['searchpackage'] = 'home/searchpackage';
+$route['searchflights'] = 'home/searchflights';
 $route['about'] = 'home/about';
 $route['contact'] = 'home/contact';
 $route['bookings'] = 'home/bookings';

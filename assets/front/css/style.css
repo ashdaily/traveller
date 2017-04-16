@@ -566,7 +566,12 @@ html,body{
 
 
 .no-page h1 {
-    font-size: 3em;
+    font-size: 15em;
+    color : #1abc9c;
+}
+.no-page a {
+    text-decoration: none;
+    color: #e74c3c;
 }
 
 /**  No page    **/
