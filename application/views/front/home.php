@@ -450,7 +450,7 @@
                                 <div class="clearfix"></div>
                                 <div class="clearfix"></div>
                                 <div class="booknowcont">
-                                    <a href="<?= base_url('home/package/' . url_title($row->package_name, 'underscore')) ?>" class="btn btn-custom pull-left">Go to Details</a>
+                                    <a href="<?= base_url('package/' . url_title($row->package_name, 'underscore')) ?>" class="btn btn-custom pull-left">Go to Details</a>
                                     <div class="clearfix"></div>
                                 </div>
 
