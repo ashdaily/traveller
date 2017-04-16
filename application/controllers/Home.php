@@ -15,6 +15,7 @@ class Home extends CI_Controller {
         $this->load->library('session');
         $this->load->model('package');
         $this->load->model('users');
+        $this->load->model('page');
         $this->load->model('foreignExchange');
     }
 
@@ -32,7 +33,7 @@ class Home extends CI_Controller {
         $this->load->view('front/home');
         $this->load->view('front/footer');
     }
- 
+
     public function package($package_name) {
         $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
         $data['result'] = $this->package->packages($package_name);
@@ -50,7 +51,7 @@ class Home extends CI_Controller {
             $this->email->to('ashishsinghvardhan@gmail.com');
             $this->email->subject('Booking Query');
             $this->email->message('Testing the email class.');
-            if($this->email->send()){
+            if ($this->email->send()) {
                 $msg['success'] = true;
             } else {
                 $msg['success'] = false;
@@ -61,31 +62,65 @@ class Home extends CI_Controller {
         echo json_encode($msg);
     }
 
-    public function foreignExchangeOrder(){
-        if(isset($_POST['submit'])){
+    public function destinations() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Holiday Packages';
+        $data['result'] = $this->package->getAllContinents();
+        $data['msg'] = '';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/destinations', $data);
+        $this->load->view('front/footer');
+    }
 
-        }else{
-            $data['title'] = 'Foreign Currecy Exchange | Fun Travel'; 
+    public function packages($countrycode) {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Holiday Packages';
+        $result = $this->package->getpackages($countrycode);
+        if ($result == FALSE) {
+            $this->load->view('front/header', $data);
+            $this->load->view('front/no_page_found', $data);
+            $this->load->view('front/footer');
+        }
+        $data['result'] = $result;
+        $data['msg'] = '';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/packages', $data);
+        $this->load->view('front/footer');
+    }
+
+    public function places($continent_code) {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Holiday Packages';
+        $data['result'] = $this->package->places($continent_code);
+        $data['msg'] = '';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/country_package', $data);
+        $this->load->view('front/footer');
+    }
+
+    public function foreignExchangeOrder() {
+        if (isset($_POST['submit'])) {
+            
+        } else {
+            $data['title'] = 'Foreign Currecy Exchange | Fun Travel';
             $this->load->view('front/header', $data);
             $this->load->view('front/foreignExchange');
             $this->load->view('front/footer');
         }
     }
-    public function foreignExchange(){
-        $this->load->library('Simple_html_dom'); 
+
+    public function foreignExchange() {
+        $this->load->library('Simple_html_dom');
         $html = new Simple_html_dom();
         $html->load_file('http://www.x-rates.com/table/?from=JPY&amount=1');
-        $info = $html->find('table.ratesTable td a'); 
+        $info = $html->find('table.ratesTable td a');
         $currency_names = $html->find('table.ratesTable tr td');
         $noc = array(); //all the currency data stored
-        foreach($currency_names as $row){   
-            $noc[] = $row->plaintext;  
+        foreach ($currency_names as $row) {
+            $noc[] = $row->plaintext;
         }
-        echo json_encode($noc);     
-
+        echo json_encode($noc);
     }
-    
-    public function getProfit(){
+
+    public function getProfit() {
         echo json_encode($this->foreignExchange->get_profit());
     }
+
 }

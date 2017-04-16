@@ -61,6 +61,12 @@
                         <li class="<?php if($active == 'package'){echo 'active';} ?>">
                             <a href="<?= base_url('admin/package') ?>"><i class="entypo-monitor"></i><span class="title">Manage Package</span></a>
                         </li>
+                        <li class="<?php if($active == 'flight'){echo 'active';} ?>">
+                            <a href="<?= base_url('admin/flights') ?>"><i class="entypo-monitor"></i><span class="title">Manage Flights</span></a>
+                        </li>
+                        <li class="<?php if($active == 'page'){echo 'active';} ?>">
+                            <a href="<?= base_url('admin/static_pages') ?>"><i class="entypo-monitor"></i><span class="title">Manage Static Pages</span></a>
+                        </li>
                         <li class="<?php if($active == 'foreignExchange'){echo 'active';} ?> has-sub">
                             <a href="<?= base_url('admin/foreignExchange') ?>"><i class="entypo-monitor"></i><span class="title">Foreign Exchange Rates</span></a> 
                             <ul>
@@ -71,6 +77,9 @@
                                     <a href="<?php echo base_url();?>admin/foreignExchangeOrders"><span class="title">Orders</span></a>
                                 </li>
                             </ul>
+                        </li>
+                        <li class="<?php if($active == 'user'){echo 'active';} ?>">
+                            <a href="<?= base_url('admin/users') ?>"><i class="entypo-monitor"></i><span class="title">Manage Users</span></a>
                         </li>
                          
 <!--                        <li class="has-sub">

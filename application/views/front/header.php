@@ -36,7 +36,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="#"><i class='fa fa-plane carrot'></i> Cheap Flights</a></li>
-        <li><a href="#">Holiday Packages</a></li>
+        <li><a href="<?= base_url('destinations') ?>">Holiday Packages</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-exchange green'></i> Foreign Exchange & Money Transfer <span class="caret"></span></a>
           <ul class="dropdown-menu">

@@ -513,12 +513,64 @@ html,body{
 
 }
      
+/*    Destination  */
 
+.place-box {
+    position: relative;
+    margin-bottom: 3rem;
+}
 
+.card, .wp-caption {
+    background: white;
+    border-radius: 2px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
 
+.place-box a.place-link .entry-title {
+    background: transparent;
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    padding: 2rem 2rem 2rem 3rem;
+    position: absolute;
+    z-index: 1;
+}
 
+.place-box a.place-link .entry-thumbnail {
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
 
+.entry-thumbnail img {
+    min-height: 232px;
+    max-height: 232px;
+}
+
+.place-box a.place-link:hover .entry-title {
+    background: rgba(0,0,0,0.54);
+    -webkit-transition: background 0.2s ease 0.1s;
+    -o-transition: background 0.2s ease 0.1s;
+    transition: background 0.2s ease 0.1s;
+}
  
+
+/**  No page    **/
+
+
+.no-page h1 {
+    font-size: 3em;
+}
+
+/**  No page    **/
+
 #luxurytrip
 {
     background: #f5ce48;

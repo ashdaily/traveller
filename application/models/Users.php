@@ -23,4 +23,27 @@ class Users extends CI_Model {
             return false;
         }
     }
+    
+    public function showAllUsers() {
+        $this->db->select('*');
+        $this->db->from('c_users');
+        $this->db->order_by('created_at', 'desc');
+        $query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            return $query->result();
+        } else {
+            return false;
+        }
+    }
+    
+    public function deleteUser() {
+        $id = $this->input->get('id');
+        $this->db->where('id', $id);
+        $this->db->delete('c_users');
+        if ($this->db->affected_rows() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

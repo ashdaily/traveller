@@ -50,7 +50,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 //Home //
-$route['package/{:any}'] = 'home/package/$1';
+$route['package/(:any)'] = 'home/package/$1';
+$route['places/(:any)'] = 'home/places/$1';
+$route['packages/(:any)'] = 'home/packages/$1';
 $route['about'] = 'home/about';
 $route['contact'] = 'home/contact';
 $route['bookings'] = 'home/bookings';
@@ -72,6 +74,6 @@ $route['admin/login'] = 'admin/login';
 $route['admin/login_check'] = 'admin/login_check';
 $route['admin/logout'] = 'admin/logout';
 $route['admin/package/{:any}/(:num)'] = 'admin/package/$1/$2';
-
+$route['admin/flight/{:any}/(:num)'] = 'admin/flight/$1/$2';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
