@@ -346,17 +346,17 @@
                     Funtravel compares exchange rate quotes across hundreds of banks and money changers</span>
             </h1>
         </div>	 
-        <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2'>
+        <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 '>
 
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="<?php echo base_url(); ?>assets/front/images/currency-exchange.jpg" alt="...">
+                        <img src="<?php echo base_url(); ?>assets/front/images/currency-exchange.jpg" class='img-responsive center-block' alt="...">
 
                     </div>
                     <div class="item">
-                        <img src="<?php echo base_url(); ?>assets/front/images/currency-exchange.png" alt="...">
+                        <img src="<?php echo base_url(); ?>assets/front/images/currency-exchange.png" class='img-responsive center-block' alt="...">
 
                     </div>
 
@@ -376,7 +376,7 @@
         <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
 
-                <!-- Modal content-->
+                
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -387,9 +387,8 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Currency Name</th>
-
-
+                                    <th>Currency </th> 
+                                    
                                     <th>We Sell At</th>
                                     <th>We Buy At</th>
                                 </tr>

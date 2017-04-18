@@ -152,15 +152,15 @@ class Admin extends CI_Controller {
 
     //Foreign Exchange Rates 
     public function foreignExchange(){
-        $this->load->library('Simple_html_dom'); 
-        $html = new Simple_html_dom();
-        $html->load_file('http://www.x-rates.com/table/?from=JPY&amount=1');
-        $info = $html->find('table.ratesTable td a'); 
-        $currency_names = $html->find('table.ratesTable tr td');
-        $noc = array(); //all the currency data stored
-        foreach($currency_names as $row){   
-            $noc[] = $row->plaintext;  
-        }
+        // $this->load->library('Simple_html_dom'); 
+        // $html = new Simple_html_dom();
+        // $html->load_file('http://www.x-rates.com/table/?from=JPY&amount=1');
+        // $info = $html->find('table.ratesTable td a'); 
+        // $currency_names = $html->find('table.ratesTable tr td');
+        // $noc = array(); //all the currency data stored
+        // foreach($currency_names as $row){   
+        //     $noc[] = $row->plaintext;  
+        // }
         if (!isset($_SESSION['username'])) {
             redirect('admin/login', 'refresh');
         }else{
@@ -171,14 +171,14 @@ class Admin extends CI_Controller {
                     ); 
                 $this->foreignExchange->enter_profit($values);
                 $currency['profit'] = $this->foreignExchange->get_profit();
-                $currency['noc'] = $noc;
+                // $currency['noc'] = $noc;
                 $data['active'] = 'foreignExchange';
                 $this->load->view('admin/header', $data);
                 $this->load->view('admin/foreignExchange',$currency);
                 $this->load->view('admin/footer');
             }else{ 
                 $currency['profit'] = $this->foreignExchange->get_profit();
-                $currency['noc'] = $noc;
+                // $currency['noc'] = $noc;
                 $data['active'] = 'foreignExchange'; 
                 $this->load->view('admin/header', $data); 
                 $this->load->view('admin/foreignExchange',$currency);
@@ -306,18 +306,18 @@ class Admin extends CI_Controller {
         echo json_encode($result);
     }
 
-//    public function foreignExchangeOrders(){ 
-//            $data['users'] = $this->package->get_c_users();
-//            $data['active'] = 'foreignExchangeOrders'; 
-//            $this->load->view('admin/header', $data); 
-//            $this->load->view('admin/foreignExchange',$data);
-//            $this->load->view('admin/footer');
-//
-//
-//
-//
-//    }
-//    
+   public function foreignExchangeOrders(){ 
+           $data['users'] = $this->package->get_c_users();
+           $data['active'] = 'foreignExchangeOrders'; 
+           $this->load->view('admin/header', $data); 
+           $this->load->view('admin/foreignExchange',$data);
+           $this->load->view('admin/footer');
+
+
+
+
+   }
+   
 
 
 }
