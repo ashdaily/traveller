@@ -106,6 +106,62 @@
                 });
             }
         });
+        $('#flight-book').on('click', function(){
+            var url = $('#flight_booking').attr('action');
+            var id = $(this).attr('rel');
+            $('input[name=flight_id]').val(id);
+            var c_f_name = $('input[name=c_f_name]');
+            var c_l_name = $('input[name=c_l_name]');
+            var c_email = $('input[name=c_email]');
+            var c_phone = $('input[name=c_phone]');
+            var data = $('#flight_booking').serialize();
+            var result = 1;
+            if (c_f_name.val() === '') {
+                c_f_name.parent().addClass('has-error');
+            } else {
+                c_f_name.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (c_l_name.val() === '') {
+                c_l_name.parent().addClass('has-error');
+            } else {
+                c_l_name.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (c_email.val() === '') {
+                c_email.parent().addClass('has-error');
+            } else {
+                c_email.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (c_phone.val() === '') {
+                c_phone.parent().addClass('has-error');
+            } else {
+                c_phone.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (result === 5){
+                $.ajax({
+                    type: 'ajax',
+                    method: 'post',
+                    url: url,
+                    data: data,
+                    async: false,
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.success) {
+                            $('#booking')[0].reset();
+                            $('.alert-success').html('Query Sent successfully').fadeIn().delay(4000).fadeOut('slow');
+                        } else {
+                            alert('Error');
+                        }
+                    },
+                    error: function () {
+                        $('.alert-success').html('Could not send Query').fadeIn().delay(4000).fadeOut('slow');
+                    }
+                });
+            }
+        });
     });
  
 </script>

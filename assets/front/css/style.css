@@ -913,6 +913,34 @@ ul.hierarchy li {
     margin-bottom: 18px;
  
 }
+
+/********** Flights ********************/
+
+.flights-banner {
+    background-image: url('../images/flight-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+.flights {
+    margin-top: 25px;
+}
+.flights table {
+    border: 1px solid #1abc9c;
+}
+.flights table button {
+    font-size: 15px;
+}
+/********** Flights ********************/
+
+/******** Text ***********/
+
+.text-green {
+    color: #1abc9c;
+}
+
+
 /********** footer ********************/
 footer {
     margin-top: 20px;

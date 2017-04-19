@@ -156,5 +156,15 @@ class Home extends CI_Controller {
     public function getProfit() {
         echo json_encode($this->foreignExchange->get_profit());
     }
+    
+    public function flight_booking() {
+        $result = $this->users->flight_booking();
+        if ($result == TRUE) {
+            $msg['success'] = TRUE;
+        }else {
+            $msg['success'] = FALSE;
+        }
+        json_encode($msg);
+    }
 
 }

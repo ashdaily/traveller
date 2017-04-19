@@ -69,6 +69,7 @@ $route['bahamas_cruises'] = 'home/bahamas_cruises';
 $route['testimonials'] = 'home/testimonials';
 $route['default_controller'] = 'home';
 $route['customer_detail'] = 'home/customer_detail';
+$route['flight_booking'] = 'home/flight_booking';
 
 //Admin //
 $route['admin'] = 'admin';

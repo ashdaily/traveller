@@ -46,4 +46,23 @@ class Users extends CI_Model {
             return false;
         }
     }
+    
+    public function flight_booking() {
+        $field = array(
+            'flight_id' => $this->input->post('flight_id'),
+            'c_f_name' => $this->input->post('c_f_name'),
+            'c_l_name' => $this->input->post('c_l_name'),
+            'c_email' => $this->input->post('c_email'),
+            'c_phone' => $this->input->post('c_phone'),
+            'adults' => $this->input->post('adults'),
+            'children' => $this->input->post('children'),
+            'created_at' => date('Y-m-d H:i:s')
+        );
+        $this->db->insert('flight_booking', $field);
+        if ($this->db->affected_rows() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
