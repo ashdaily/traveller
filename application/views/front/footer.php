@@ -168,42 +168,71 @@
 <!-- script for top page for foreign currency exchange -->
 
  <script>
-      $(document).ready(function(){ 
-         $.ajax({
-                type: 'ajax',
-                url: '<?php echo base_url(); ?>home/foreignExchange',
-                async: false,
-                dataType: 'json',
-                success: function (data) {
+      // $(document).ready(function(){ 
+      //    $.ajax({
+      //           type: 'ajax',
+      //           url: '<?php echo base_url(); ?>home/foreignExchange',
+      //           async: false,
+      //           dataType: 'json',
+      //           success: function (data) {
                     
+      //                $.getJSON('<?php echo base_url();?>home/getProfit',function(json){
+      //                   var buy = json[0].profit_buy;
+      //                   var sell = json[0].profit_sell; 
+      //                   var html = '';
+      //                   var i,j;  
+      //                   var x = data[1];
+                         
+      //                   for(i = 0,j = 1; i < data.length; i=i+3,j=j+1) { 
+                            
+      //                       var d = parseFloat(data[i+2]);
+      //                       var sell_rate = (d + ((d*sell)/100));
+      //                       var buy_rate = (d - ((d*buy)/100)); 
+      //                       html += '<tr>' + '<td>' + j + '</td>' + '<td>' + data[i] + '</td>' + '<td>¥ ' + sell_rate.toFixed(3) + '</td>'+ '<td>¥ ' + buy_rate.toFixed(3) + '</td>' +'</tr>';
+      //                   }
+      //                   $('#feTable').html(html); 
+      //               });
+                      
+      //           },
+      //           error: function () {
+      //               alert('Something went wrong !');
+      //           }
+      //       }); 
+      // });
+
+
+      
+      </script>
+ <script>
+      $(document).ready(function(){  
                      $.getJSON('<?php echo base_url();?>home/getProfit',function(json){
                         var buy = json[0].profit_buy;
                         var sell = json[0].profit_sell; 
                         var html = '';
-                        var i,j;  
-                        var x = data[1];
+                        var i;
+                        var j=1;  
+                        $.getJSON('http://www.apilayer.net/api/live?access_key=94fa203bd4e7c38de4d1cb09de59f7ce',function(data){ 
+                        data = data.quotes;
+                        console.log(data);
+
+                        for(i in data){ 
+                            var rate = 1/(data[i]/data['USDJPY']); 
+                            var sell_rate = (rate + ((rate*sell)/100));
+                            var buy_rate = (rate - ((rate*buy)/100)); 
+                            var currency_name = 'cut'+i;
+                            currency_name = currency_name.replace('cutUSD','');
+                            html += '<tr>'+ '<td>'+j+ '</td>' +'<td>'+currency_name+ '</td>' +'<td> '+sell_rate+ '</td>' +'<td> '+buy_rate+ '</td>' + '</tr>'; 
+                            j++;
+                        }  
+                        $('#feTable').html(html);   
+                        });   
                          
-                        for(i = 0,j = 1; i < data.length; i=i+3,j=j+1) { 
-                            
-                            var d = parseFloat(data[i+2]);
-                            var sell_rate = (d + ((d*sell)/100));
-                            var buy_rate = (d - ((d*buy)/100)); 
-                            html += '<tr>' + '<td>' + j + '</td>' + '<td>' + data[i] + '</td>' + '<td>¥ ' + sell_rate.toFixed(3) + '</td>'+ '<td>¥ ' + buy_rate.toFixed(3) + '</td>' +'</tr>';
-                        }
-                        $('#feTable').html(html); 
-                    });
-                      
-                },
-                error: function () {
-                    alert('Something went wrong !');
-                }
-            }); 
+                    });  
       });
 
 
       
       </script>
-
 
 </body>
 </html>
