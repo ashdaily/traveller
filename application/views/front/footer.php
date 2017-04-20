@@ -15,9 +15,9 @@
         </div>
         <div class="custom-links sans">
             <a href="">Home</a>
-            <a href="">About</a>
+            <a href="<?= base_url('about') ?>">About</a>
             <a href="">Contact</a>
-            <a href="">Destination</a>
+            <a href="<?= base_url('destination') ?>">Destination</a>
             <a href="">Terms</a>
         </div>
     </div>

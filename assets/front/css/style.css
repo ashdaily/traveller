@@ -940,6 +940,53 @@ ul.hierarchy li {
     color: #1abc9c;
 }
 
+/******** Text ***********/
+
+/******** About ***********/
+.about {
+    margin-top: 50px;
+}
+
+.about .main {
+    padding-left: 50px;
+}
+.about .main table {
+    line-height: 30px;
+}
+
+.about .sidebar {
+    border: 1px solid #1abc9c;
+    border-left: 1px solid #1abc9c;
+    border-right: 1px solid #1abc9c;
+}
+.about .sidebar ul {
+    list-style: disc;
+    float: left;
+    padding-left: 15px;
+    
+}
+.about .sidebar h3 {
+    margin-bottom: 25px !important;
+}
+.about .sidebar ul li {
+    margin-bottom: 20px;
+}
+.about .sidebar {
+    padding-bottom: 10px;
+}
+
+/******** About ***********/
+
+/******** airlines ***********/
+.airlines table, .airlines table tr, .airlines table tr td {
+    border: 1px solid #1abc9c;
+}
+.airlines td, .airlines th{
+    padding-left: 5px;
+}
+
+/******** airlines ***********/
+
 
 /********** footer ********************/
 footer {

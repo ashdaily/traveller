@@ -27,6 +27,41 @@ class Home extends CI_Controller {
         $this->load->view('front/home', $data);
         $this->load->view('front/footer');
     }
+    
+    public function about() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/about');
+        $this->load->view('front/footer');
+    }
+    
+    public function transfers() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/transfers');
+        $this->load->view('front/footer');
+    }
+    
+    public function embassies() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/embassies');
+        $this->load->view('front/footer');
+    }
+    
+    public function mileage() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/mileage');
+        $this->load->view('front/footer');
+    }
+    
+    public function airlines() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/airlines');
+        $this->load->view('front/footer');
+    }
 
     public function languageSelector() {
         $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
