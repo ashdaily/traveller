@@ -49,7 +49,7 @@
                             <td>MitsuiSumitomo</td>
                         </tr>
                     </table>
-                    <h3 class="sans text-green"><u>Office Information</u></h3>
+                    <h3 class="sans text-green" id="companyInformation"><u>Office Information</u></h3>
                     <table>
                         <tr>
                             <th>Branch</th>

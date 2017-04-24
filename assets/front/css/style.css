@@ -216,7 +216,7 @@
 
 }
 
-   
+
 html,body{
     overflow-x: hidden !important;
 }
@@ -293,11 +293,11 @@ html,body{
 
 @font-face {
     font-family: bebas;
-    src: url(http://localhost/ft/assets/fonts/bebasneue_bold-webfont.woff);
+    src: url('../fonts/bebasneue_bold-webfont.woff');
 }
 @font-face{
     font-family: bebas-regular;
-    src:url(http://localhost/ft/assets/fonts/bebasneue_regular-webfont.ttf);
+    src:url('../fonts/bebasneue_regular-webfont.ttf');
 }
 
 /* Owl Crowsel */
@@ -318,7 +318,7 @@ html,body{
 {
     color: #fff;
 }
- 
+
 
 /* 15 inches and above Laptops and Desktops screen below  ***********************************************************:*/ 
 
@@ -330,7 +330,7 @@ html,body{
         height:70px;
     }
     .nav > li{
-    padding:10px;
+        padding:10px;
     }
     .nav li a{
         font-family:'bebas-regular';
@@ -380,7 +380,7 @@ html,body{
         font-weight: 200;
         letter-spacing: 2px;
     }
-    
+
     .home-2 ul li.active > a{
         color:#fff !important;
         font-family: 'bebas';
@@ -422,7 +422,7 @@ html,body{
 
     /* money transfer home page */
     .moneytransfer{
-        background:url('http://localhost/funtravel/traveller/assets/front/images/western-union-banner.jpg') center no-repeat;
+        background:url('../images/western-union-banner.jpg') center no-repeat;
         height:300px;
         margin-bottom: 75px;
     }
@@ -510,9 +510,51 @@ html,body{
         font-family: 'bebas' !important;
 
     }
+    .flights table button:hover, .flights table button:active, .flights table button:focus  {
+        font-size: 15px;
+    }
 
 }
-     
+
+/****** Static Pages Padding *****/
+
+.about , .transfers {
+    padding-bottom: 50px;
+}
+
+.about ul ,.transfers ul, .about ol ,.transfers ol, .about table ,.transfers table {
+    font-family: 'bebas-regular';
+    letter-spacing: 1px;
+}
+
+/*****  Home Flights *****/
+.flight_home1 {
+    margin-top: 50px;
+}
+.flight_home1 h1 {
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 45px;
+}
+
+.flight_home {
+    border: 1px solid #1abc9c;
+    background: rgba(170, 221, 221, 0.57);
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+.flight_home p {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 2em;
+    color: #0088cc;
+    letter-spacing: 1px;
+}
+
+
+/*****  Home Flights *****/
+
 /*    Destination  */
 
 .place-box {
@@ -560,7 +602,7 @@ html,body{
     -o-transition: background 0.2s ease 0.1s;
     transition: background 0.2s ease 0.1s;
 }
- 
+
 
 /**  No page    **/
 
@@ -598,7 +640,7 @@ html,body{
 }
 #luxurytrip .tripbadge
 {
-    
+
 }
 
 .tripbadge
@@ -911,7 +953,7 @@ ul.hierarchy li {
     color: #1F2021;
     margin: 0;
     margin-bottom: 18px;
- 
+
 }
 
 /********** Flights ********************/
@@ -963,7 +1005,7 @@ ul.hierarchy li {
     list-style: disc;
     float: left;
     padding-left: 15px;
-    
+
 }
 .about .sidebar h3 {
     margin-bottom: 25px !important;
@@ -1045,7 +1087,7 @@ footer .copyright {
 .hide{
     display: none;
 }
- 
+
 
 
 

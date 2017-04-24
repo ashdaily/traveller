@@ -23,6 +23,7 @@ class Home extends CI_Controller {
     public function home() {
         $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
         $data['result'] = $this->package->showHomePackage();
+        $data['flights'] = $this->flight->showAllFlights();
         $this->load->view('front/header', $data);
         $this->load->view('front/home', $data);
         $this->load->view('front/footer');
@@ -39,6 +40,27 @@ class Home extends CI_Controller {
         $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
         $this->load->view('front/header', $data);
         $this->load->view('front/transfers');
+        $this->load->view('front/footer');
+    }
+    
+    public function terms() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/terms');
+        $this->load->view('front/footer');
+    }
+    
+    public function career() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/career');
+        $this->load->view('front/footer');
+    }
+    
+    public function contact() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/contact');
         $this->load->view('front/footer');
     }
     
@@ -104,6 +126,15 @@ class Home extends CI_Controller {
         $data['msg'] = '';
         $this->load->view('front/header', $data);
         $this->load->view('front/destinations', $data);
+        $this->load->view('front/footer');
+    }
+    
+    public function cheapflights() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Holiday Packages';
+        $data['result'] = $this->flight->showAllFlights();
+        $data['msg'] = '';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/flights', $data);
         $this->load->view('front/footer');
     }
 
@@ -199,7 +230,7 @@ class Home extends CI_Controller {
         }else {
             $msg['success'] = FALSE;
         }
-        json_encode($msg);
+        echo json_encode($msg);
     }
 
 }

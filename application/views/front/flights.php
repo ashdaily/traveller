@@ -1,4 +1,5 @@
 <div class="flights-banner"></div>
+<div class="alert alert-success" style="display: none;"></div>
 <div class='container-fluid home-0'>
     <section class="product-detail col-xs-12" style="transform: none;">
         <div class="container" style="transform: none;">
@@ -21,7 +22,7 @@
                                 <td><?= $row->flight_to ?></td>
                                 <td>Starting From $<?= $row->flight_price ?>*</td>
                                 <td>
-                                    <button id="flight-book" rel="<?= $row->id ?>" class="btn carrot-btn btn-sm" data-toggle="modal" data-target="#myModal">Book</button>
+                                    <button id="flight-book" rel="<?= $row->id ?>" class="flight_booking btn carrot-btn btn-sm" data-toggle="modal" data-target="#myModal">Book</button>
                                 </td>
                             </tr>
                             <?php } ?>
@@ -90,6 +91,7 @@
                                 <div class="col-md-6">
                                     <label>Children <span class="required small">*</span></label>
                                     <select class="form-control" id="mySelect" name="children">
+                                        <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -106,7 +108,7 @@
                             <li class="row">
                                 <div class="form-group">
                                     <div class="col-sm-12" style="padding-top: 10px;">
-                                        <input type="button" id="book_now" class="btn form-control btn-primary btn-lg text-upper" name="book_now" value="Book Now" style="background-color:#e74c3c; border:none;">
+                                        <input type="button" id="flight_book" class="btn form-control btn-primary btn-lg text-upper" name="book_now" value="Book Now" style="background-color:#e74c3c; border:none;">
                                     </div>
 
 <!--<span class="required small">*Your email will never published.</span>-->

@@ -4,7 +4,66 @@
         <h1 class='sansa text-center'> CURRENCY EXCHANGE & MONEY TRANSFER</h1>	
 
     </div>
-    <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 home-2'>
+    <style>
+        #owl1 .item img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <div class="col-sm-4">
+        <div class="fadeOut owl-carousel owl-theme"  id="owl1">
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/01.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/02.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/03.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/04.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/05.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/06.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/07.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/08.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/09.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/10.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/11.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/12.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/13.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/14.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/15.jpg" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="<?= base_url() ?>assets/front/images/16.jpg" />
+            </div>
+        </div>
+    </div>
+    <div class='col-xs-12 col-sm-8 home-2'>
         <ul class="nav nav-pills nav-justified">
             <li class="active"><a data-toggle="tab" href="#home1">Holiday Packages</a></li>
             <li><a data-toggle="tab" href="#home">FLIGHT</a></li>
@@ -25,8 +84,8 @@
 
                         </div>
 
-                        <div class='col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-8'>
-                            <button type="submit" class='btn btn-default'><i class='fa fa-rocket'></i> Search Package</button>
+                        <div class='col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-7'>
+                            <button type="submit" class='btn btn-default carrot-btn'><i class='fa fa-rocket'></i> Search Package</button>
                         </div>
                     </form>
 
@@ -49,18 +108,18 @@
                                 <input type="text" class="form-control" placeholder="CITY, COUNTRY" aria-describedby="basic-addon1" name='to'>
                             </div>
                         </div>
-<!--                        <div class='col-xs-12 col-md-6 input-field'>
-                            <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon1"><i class='fa fa-calendar'></i> ONE WAY:</span>
-                                <input type="date" class="form-control" placeholder="from" aria-describedby="basic-addon1" name='date1'>
-                            </div>
-                        </div>
-                        <div class='col-xs-12 col-md-6 input-field'>
-                            <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon1"><i class='fa fa-calendar'></i> ROUND WAY:</span>
-                                <input type="date" class="form-control" placeholder="from" aria-describedby="basic-addon1" name='date2'>
-                            </div>
-                        </div>-->
+                        <!--                        <div class='col-xs-12 col-md-6 input-field'>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1"><i class='fa fa-calendar'></i> ONE WAY:</span>
+                                                        <input type="date" class="form-control" placeholder="from" aria-describedby="basic-addon1" name='date1'>
+                                                    </div>
+                                                </div>
+                                                <div class='col-xs-12 col-md-6 input-field'>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1"><i class='fa fa-calendar'></i> ROUND WAY:</span>
+                                                        <input type="date" class="form-control" placeholder="from" aria-describedby="basic-addon1" name='date2'>
+                                                    </div>
+                                                </div>-->
                         <div class='col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-8'>
                             <button type="submit" class='btn btn-default'><i class='fa fa-rocket'></i> Cheap Fares</button>
                         </div>
@@ -314,7 +373,29 @@
 
     </div> 
 </div>
-
+<div class="container-fluid flight_home1">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center sansa">
+                        Cheap Flights
+                    </h1>
+                </div>
+                <div class="col-xs-12">
+                    <?php foreach ($flights as $flight) { ?>
+                    <div class="col-sm-4">
+                        <div class="flight_home">
+                            <p class="sans"><?= $flight->flight_to ?></p>
+                            <p class="sans text-right"><?= $flight->flight_price ?>*</p>
+                        </div>
+                    </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class='container-fluid'>
 
     <!-- western union -->
@@ -376,7 +457,7 @@
         <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
 
-                
+
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -388,7 +469,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Currency </th> 
-                                    
+
                                     <th>We Sell At</th>
                                     <th>We Buy At</th>
                                 </tr>
@@ -457,21 +538,21 @@
                         </div>
                     </div>
                 <?php } ?>
-    <!--            <div class="item"><img class="lazyOwl" data-src="assets/images/owl2.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl3.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl4.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl5.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl6.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl7.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl8.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl1.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl2.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl3.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl4.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl5.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl6.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl7.jpg" alt="Lazy Owl Image"></div>
-                <div class="item"><img class="lazyOwl" data-src="assets/images/owl8.jpg" alt="Lazy Owl Image"></div>-->
+<!--            <div class="item"><img class="lazyOwl" data-src="assets/images/owl2.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl3.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl4.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl5.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl6.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl7.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl8.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl1.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl2.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl3.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl4.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl5.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl6.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl7.jpg" alt="Lazy Owl Image"></div>
+        <div class="item"><img class="lazyOwl" data-src="assets/images/owl8.jpg" alt="Lazy Owl Image"></div>-->
             </div>
         </div>
     </div>

@@ -68,4 +68,6 @@
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
 }
-
+#owl1 .owl-carousel .item {
+    height: 250px;
+}
