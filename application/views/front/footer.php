@@ -1,23 +1,20 @@
 <footer class='container-fluid'>
     <div class='col-xs-12'>
         <div class='social-buttons'>
-            <a href="#" class="btn" ><span class="fa fa-facebook-f"></span></a>
-            <a href="#" class="btn" ><span class="fa fa-pinterest-p"></span></a>
-            <a href="#" class="btn" ><span class="fa fa-twitter"></span></a>
-            <a href="#" class="btn" ><span class="fa fa-instagram"></span></a>
+            <a href="https://www.facebook.com/FunTravel-Roppongi-169642149753285" class="btn" ><span class="fa fa-facebook-f"></span></a>
+            <a href="https://twitter.com/FunTravelTokyo" class="btn" ><span class="fa fa-twitter"></span></a>
         </div>
         <div class="links sans">
-            <a href="">Home</a>
-            <a href="">Flights</a>
-            <a href="">Foreign Exchange</a>
-            <a href="">Holiday Packages</a>
+            <a href="<?= base_url() ?>">Home</a>
+            <a href="<?= base_url('cheapflights') ?>">Flights</a>
+            <a href="<?= base_url('destinations') ?>">Holiday Packages</a>
         </div>
         <div class="custom-links sans">
-            <a href="">Home</a>
+            <a href="<?= base_url() ?>">Home</a>
             <a href="<?= base_url('about') ?>">About</a>
-            <a href="">Contact</a>
-            <a href="<?= base_url('destination') ?>">Destination</a>
-            <a href="">Terms</a>
+            <a href="<?= base_url('contact') ?>">Contact</a>
+            <a href="<?= base_url('destinations') ?>">Destination</a>
+            <a href="<?= base_url('terms') ?>">Terms</a>
         </div>
     </div>
     <div class="clearfix"></div>
@@ -29,7 +26,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="<?= base_url() ?>assets/front/js/jquery.smartWizard-2.0.min.js"></script>
 <script type="text/javascript">
     $('.carousel').carousel({
         interval: 2000
@@ -42,9 +39,9 @@
     $(document).ready(function () {
         $('#owl1').owlCarousel({
             items: 1,
-            pagination : false,
+            pagination: false,
             autoPlay: 3000,
-            transitionStyle : "fade"
+            transitionStyle: "fade"
         });
         $("#owl-demo").owlCarousel({
             items: 3,
@@ -173,6 +170,157 @@
                 });
             });
         });
+        $('#send_money').on('click', function () {
+            var url = $('#money_transfer').attr('action');
+            var data = $('#money_transfer').serialize();
+            var first_name = $('input[name=first_name]');
+            var middle_name = $('input[name=middle_name]');
+            var last_name = $('input[name=last_name]');
+            var phone = $('input[name=phone]');
+            var address = $('textarea[name=address]');
+            var city = $('input[name=city]');
+            var state = $('input[name=state]');
+            var country = $('input[name=country]');
+            var nationality = $('input[name=nationality]');
+            var account_sent = $('input[name=account_sent]');
+            var r_first_name = $('input[name=r_first_name]');
+            var r_middle_name = $('input[name=r_middle_name]');
+            var r_last_name = $('input[name=r_last_name]');
+            var r_city = $('input[name=r_city]');
+            var r_state = $('input[name=r_state]');
+            var r_country = $('input[name=r_country]');
+            var transaction_purpose = $('input[name=transaction_purpose]');
+            var result = 1;
+            if (first_name.val() === '') {
+                first_name.parent().addClass('has-error');
+            } else {
+                first_name.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (middle_name.val() === '') {
+                middle_name.parent().addClass('has-error');
+            } else {
+                middle_name.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (last_name.val() === '') {
+                last_name.parent().addClass('has-error');
+            } else {
+                last_name.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (phone.val() === '') {
+                phone.parent().addClass('has-error');
+            } else {
+                phone.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (address.val() === '') {
+                address.parent().addClass('has-error');
+            } else {
+                address.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (city.val() === '') {
+                city.parent().addClass('has-error');
+            } else {
+                city.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (state.val() === '') {
+                state.parent().addClass('has-error');
+            } else {
+                state.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (country.val() === '') {
+                country.parent().addClass('has-error');
+            } else {
+                country.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (nationality.val() === '') {
+                nationality.parent().addClass('has-error');
+            } else {
+                nationality.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (account_sent.val() === '') {
+                account_sent.parent().addClass('has-error');
+            } else {
+                account_sent.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (r_first_name.val() === '') {
+                r_first_name.parent().addClass('has-error');
+            } else {
+                r_first_name.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (r_middle_name.val() === '') {
+                r_middle_name.parent().addClass('has-error');
+            } else {
+                r_middle_name.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (r_last_name.val() === '') {
+                r_last_name.parent().addClass('has-error');
+            } else {
+                r_last_name.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (r_city.val() === '') {
+                r_city.parent().addClass('has-error');
+            } else {
+                r_city.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (r_state.val() === '') {
+                r_state.parent().addClass('has-error');
+            } else {
+                r_state.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (r_country.val() === '') {
+                r_country.parent().addClass('has-error');
+            } else {
+                r_country.parent().removeClass('has-error');
+                result += 1;
+            }
+            if (transaction_purpose.val() === '') {
+                transaction_purpose.parent().addClass('has-error');
+            } else {
+                transaction_purpose.parent().removeClass('has-error');
+                result += 1;
+            }
+            console.log(result);
+            if (result >= 10) {
+                $('#btn2').attr('href', '#step2');
+            } else {
+                $('#btn2').attr('href', '#');
+            }
+            if (result === 18) {
+                $.ajax({
+                    type: 'ajax',
+                    method: 'post',
+                    url: url,
+                    data: data,
+                    async: false,
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.success) {
+                            $('#money_transfer')[0].reset();
+                            $('.alert-success').html('Query Sent successfully').fadeIn().delay(4000).fadeOut('slow');
+                        } else {
+                            alert('Error');
+                        }
+                    },
+                    error: function () {
+                        $('.alert-success').html('Could not send Query').fadeIn().delay(4000).fadeOut('slow');
+                    }
+                });
+            }
+        });
     });
 
 </script>
@@ -211,7 +359,49 @@
     //       }); 
     // });
 
+    $(document).ready(function () {
 
+        var navListItems = $('div.setup-panel div a'),
+                allWells = $('.setup-content'),
+                allNextBtn = $('.nextBtn');
+
+        allWells.hide();
+
+        navListItems.click(function (e) {
+            e.preventDefault();
+            var $target = $($(this).attr('href')),
+                    $item = $(this);
+
+            if (!$item.hasClass('disabled')) {
+                navListItems.removeClass('btn-primary').addClass('btn-default');
+                $item.addClass('btn-primary');
+                allWells.hide();
+                $target.show();
+                $target.find('input:eq(0)').focus();
+            }
+        });
+
+        allNextBtn.click(function () {
+            var curStep = $(this).closest(".setup-content"),
+                    curStepBtn = curStep.attr("id"),
+                    nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                    curInputs = curStep.find("input[type='text'],input[type='url']"),
+                    isValid = true;
+
+            $(".form-group").removeClass("has-error");
+            for (var i = 0; i < curInputs.length; i++) {
+                if (!curInputs[i].validity.valid) {
+                    isValid = false;
+                    $(curInputs[i]).closest(".form-group").addClass("has-error");
+                }
+            }
+
+            if (isValid)
+                nextStepWizard.removeAttr('disabled').trigger('click');
+        });
+
+        $('div.setup-panel div a.btn-primary').trigger('click');
+    });
 
 </script>
 <script>

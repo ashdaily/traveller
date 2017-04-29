@@ -17,6 +17,7 @@ class Home extends CI_Controller {
         $this->load->model('users');
         $this->load->model('page');
         $this->load->model('flight');
+        $this->load->model('moneyTransfer');
         $this->load->model('foreignExchange');
     }
 
@@ -71,7 +72,24 @@ class Home extends CI_Controller {
         $this->load->view('front/footer');
     }
     
-    public function mileage() {
+    public function money_transfer() {
+        $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
+        $this->load->view('front/header', $data);
+        $this->load->view('front/money_transfer');
+        $this->load->view('front/footer');
+    }
+    
+    public function send_money() {
+        $result = $this->moneyTransfer->send_money();
+        if ($result == TRUE) {
+            $msg['success'] = TRUE;
+        }else {
+            $msg['success'] = FALSE;
+        }
+        echo json_encode($msg);
+    }
+
+        public function mileage() {
         $data['title'] = 'Fun Travel Roppongi Azabujuban Tokyo | Book Flights, Holiday Packages, Money Exchange';
         $this->load->view('front/header', $data);
         $this->load->view('front/mileage');

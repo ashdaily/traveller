@@ -1,7 +1,7 @@
-<div class='container-fluid home-0'>
+<div class='container-fluid home-0' id='home-0'>
     <div class='col-xs-12 home-1'>
-        <h1 class='sans text-center'>CHEAP FLIGHTS, HOTELS, HOLIDAY PACKAGES</h1>	
-        <h1 class='sansa text-center'> CURRENCY EXCHANGE & MONEY TRANSFER</h1>	
+        <h1 class='sans text-center white-text'>CHEAP FLIGHTS, HOTELS, HOLIDAY PACKAGES</h1>	
+        <h1 class='sansa text-center white-text'> CURRENCY EXCHANGE & MONEY TRANSFER</h1>	
 
     </div>
     <style>
@@ -62,6 +62,11 @@
                 <img class="img-responsive" src="<?= base_url() ?>assets/front/images/16.jpg" />
             </div>
         </div>
+        <div class='row'>
+            <div class='col-xs-12'>
+                
+            </div>
+        </div>
     </div>
     <div class='col-xs-12 col-sm-8 home-2'>
         <ul class="nav nav-pills nav-justified">
@@ -71,7 +76,7 @@
             <li><a data-toggle="tab" href="#menu2">CURRENCY EXCHANGE</a></li>
             <li><a data-toggle="tab" href="#menu3">MONEY TRANSFER</a></li>
         </ul>
-
+ 
         <div class="tab-content">
             <div id="home1" class="tab-pane fade in active">
                 <div class='col-xs-12 col-md-10 col-md-offset-1 flight-form'>
@@ -369,20 +374,50 @@
                     </form>
                 </div>
             </div>
+
+
         </div>
 
     </div> 
 </div>
 <div class="container-fluid flight_home1">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="text-center sansa">
+                    <h1 class="text-center sans">
                         Cheap Flights
                     </h1>
                 </div>
-                <div class="col-xs-12">
+                <div class='col-xs-4'>
+                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                          
+
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img src="<?php echo base_url();?>assets/images/cheaptickets.jpg" alt="...">
+                               
+                            </div>
+                            <div class="item">
+                              <img src="<?php echo base_url();?>assets/images/cheaptickets2.jpg" alt="...">
+                              <div class="carousel-caption">
+                                
+                              </div>
+                            </div>
+                            <div class="item">
+                              <img src="<?php echo base_url();?>assets/images/tickets-on-sale.jpg" alt="...">
+                              <div class="carousel-caption">
+                                
+                              </div>
+                            </div>
+                            
+                          </div>
+
+                          
+                        </div>
+                </div>
+                <div class="col-xs-8">
                     <?php foreach ($flights as $flight) { ?>
                     <div class="col-sm-4">
                         <div class="flight_home">
@@ -410,8 +445,8 @@
                 <div class='col-xs-12 moneytransfer'>
 
                 </div>	
-                <div class='col-xs-12'>
-                    <button class='btn btn-default green-btn center-block'> SEND MONEY <i class="fa fa-fighter-jet"></i></button>
+                <div class='col-xs-12 '>
+                    <a href="<?= base_url('money_transfer') ?>" class='btn btn-default green-btn center-block'> SEND MONEY <i class="fa fa-fighter-jet"></i></a>
                 </div>
             </div>
         </div> 
