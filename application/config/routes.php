@@ -79,6 +79,8 @@ $route['testimonials'] = 'home/testimonials';
 $route['default_controller'] = 'home';
 $route['customer_detail'] = 'home/customer_detail';
 $route['flight_booking'] = 'home/flight_booking';
+$route['forex-booking'] = 'home/foreignExchange';
+
 
 //Admin //
 $route['admin'] = 'admin';

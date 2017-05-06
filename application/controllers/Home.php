@@ -223,7 +223,22 @@ class Home extends CI_Controller {
             $this->load->view('front/footer');
         }
     }
-
+    public function foreignExchange(){
+         if (isset($_POST['submit'])) {
+            $result = $this->users->forex_users();   
+            if ($result == TRUE) {
+            $msg['success'] = TRUE;
+            }else {
+                $msg['success'] = FALSE;
+            }
+            echo json_encode($msg);     
+        } else {
+            $data['title'] = 'Foreign Currecy Exchange | Fun Travel';
+            $this->load->view('front/header', $data);
+            $this->load->view('front/foreignExchange');
+            $this->load->view('front/footer');
+        } 
+    }
     // public function foreignExchange() {
     //     $this->load->library('Simple_html_dom');
     //     $html = new Simple_html_dom();

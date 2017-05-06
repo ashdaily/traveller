@@ -219,6 +219,7 @@
 
 html,body{
     overflow-x: hidden !important;
+
 }
 .nopad{
     padding:0px !important;
@@ -373,6 +374,7 @@ html,body{
         height:12px;
         display: inline;
     }
+
     #home-0{
         background:#00253d;
         border-top:3px solid #1abc9c;
@@ -430,6 +432,29 @@ html,body{
         margin-top:15%;
     }
 
+    #quick-links{
+        margin-bottom: 15px;
+        display: table;
+        width: 100%;
+    }
+    #quick-links span{
+       
+         
+        display: table-cell;
+        text-align: center;
+    }
+    #quick-links  a{
+        font-style: italic;
+        font-size: 1.2em;
+        text-decoration: underline;
+        color:#bbb;
+        font-family: Helvetica;
+    }
+    #quick-links a:hover{
+        font-style: normal;
+        color:#00253d;
+
+    }
     /* money transfer home page */
     .moneytransfer{
         background:url('../images/western-union-banner.jpg') center no-repeat;
@@ -523,9 +548,41 @@ html,body{
     .flights table button:hover, .flights table button:active, .flights table button:focus  {
         font-size: 15px;
     }
+    .marquee-row .sans{
+        background: yellow;
+         
+        font-size:1.1em;
+        letter-spacing: 2px;
+    }
 
 }
+/**************  Css for all     ***********************/
 
+/* home page */
+.home-0{
+    padding-top:75px;
+}
+#loader{
+    background: #00253d;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+}
+#loader img{
+    display: block;
+    margin-top:25%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-default{
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    border-radius: 0px !important;
+}
 /******* money tranfer *******/
 
 .stepwizard-step p {
@@ -588,7 +645,7 @@ html,body{
 
 /*****  Home Flights *****/
 .flight_home1 {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 .flight_home1 h1 {
     margin-bottom: 50px;
@@ -642,6 +699,7 @@ html,body{
     padding: 2rem 2rem 2rem 3rem;
     position: absolute;
     z-index: 1;
+    letter-spacing: 3px;
 }
 
 .place-box a.place-link .entry-thumbnail {
@@ -1148,12 +1206,19 @@ footer .copyright {
 }
 
 
+/* foreign Exchange page */
 
 
+#fe-table-wrap{
+    margin-top:75px;
 
-
-
-
+}
+#forex_form .input-field{
+    margin-top: 35px;
+} 
+#forex_form .green-btn{
+    margin-top: 35px;
+}
 
 
 

@@ -15,10 +15,32 @@
         <link href="<?php echo base_url(); ?>assets/front/css/owl.carousel.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>assets/front/css/owl.theme.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>assets/front/css/owl.transitions.css" rel="stylesheet">
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-
-        <nav class="navbar navbar-default">
+    <div class='alert alert-success' id='success-alert'>
+        <strong>Sent Successfully ! </strong>
+    </div>
+    <div class='alert alert-success' id='success-alert'>
+       <strong> Failed, Please try again ! </strong> 
+    </div>
+    <style type="text/css">
+        #failure-alert,#success-alert{
+            position: fixed;
+            z-index: 12;
+            width: 300px;
+            top:100px;
+            right: 0px;
+            display: none;
+        }         
+    </style>
+    <div id='loader'>
+        <img src='<?php echo base_url();?>/assets/front/images/reload.gif' height='50' />
+    </div>
+        <nav class="navbar navbar-default affix">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -38,13 +60,13 @@
                         <li><a href="<?php echo base_url('cheapflights'); ?>"><i class='fa fa-plane carrot'></i> Cheap Flights</a></li>
                         <li><a href="<?= base_url('destinations') ?>">Holiday Packages</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-exchange green'></i> Foreign Exchange & Money Transfer <span class="caret"></span></a>
+                            <a href="<?php echo base_url('forex-booking');?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-exchange green'></i> Foreign Exchange & Money Transfer <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Buy Currency <i class='fa fa-money carrot pull-right'> </i></a></li>
+                                <li><a href="<?php echo base_url('forex-booking');?>">Buy Currency <i class='fa fa-money carrot pull-right'> </i></a></li>
 
-                                <li><a href="#">Send Money Online <i class='fa fa-send carrot pull-right'></i></a></li>
+                                <li><a href="<?= base_url('money_transfer') ?>">Send Money Online <i class='fa fa-send carrot pull-right'></i></a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Checkout the Rates <i class='fa fa-list-alt carrot pull-right'></i></a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">Checkout the Rates <i class='fa fa-list-alt carrot pull-right'></i></a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">Frequently Asked Question <i class='fa fa-question-circle carrot pull-right'></i></a></li>
                             </ul>

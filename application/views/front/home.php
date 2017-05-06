@@ -1,4 +1,6 @@
+
 <div class='container-fluid home-0' id='home-0'>
+
     <div class='col-xs-12 home-1'>
         <h1 class='sans text-center white-text'>CHEAP FLIGHTS, HOTELS, HOLIDAY PACKAGES</h1>	
         <h1 class='sansa text-center white-text'> CURRENCY EXCHANGE & MONEY TRANSFER</h1>	
@@ -8,7 +10,7 @@
         #owl1 .item img{
             display: block;
             width: 100%;
-            height: auto;
+            max-height: 300px;
         }
     </style>
     <div class="col-sm-4">
@@ -62,19 +64,15 @@
                 <img class="img-responsive" src="<?= base_url() ?>assets/front/images/16.jpg" />
             </div>
         </div>
-        <div class='row'>
-            <div class='col-xs-12'>
-                
-            </div>
-        </div>
+        
     </div>
     <div class='col-xs-12 col-sm-8 home-2'>
-        <ul class="nav nav-pills nav-justified">
+        <ul class="nav nav-pills nav-justified" >
             <li class="active"><a data-toggle="tab" href="#home1">Holiday Packages</a></li>
             <li><a data-toggle="tab" href="#home">FLIGHT</a></li>
             <!--           <li><a data-toggle="tab" href="#menu1">HOTEL</a></li>-->
-            <li><a data-toggle="tab" href="#menu2">CURRENCY EXCHANGE</a></li>
-            <li><a data-toggle="tab" href="#menu3">MONEY TRANSFER</a></li>
+            <li><a data-toggle="tab" href="#menu2" id='forex-booking' >CURRENCY EXCHANGE</a></li>
+            <li><a data-toggle="tab" href="#menu3" id='money-transfer-link'>MONEY TRANSFER</a></li>
         </ul>
  
         <div class="tab-content">
@@ -381,8 +379,36 @@
     </div> 
 </div>
 <div class="container-fluid flight_home1">
+    <div class='row'>
+        <div class='col-xs-12' id='quick-links'> 
+            <span><a href="<?= base_url('transfers') ?>">Transfers</a> </span>
+            <span> <a href="<?= base_url('about#companyInformation') ?> ">Company Information</a></span>
+            <span><a href="<?= base_url('career') ?>" >Career</a></span>
+            <span><a href="<?= base_url('terms') ?>" >Terms & Conditions</a></span>
+            <span><a href="<?= base_url('contact') ?>" >Contact Us</a></span>
+            <span><a href="<?= base_url('embassies') ?>">Embassies</a> </span>
+            <span><a href="<?= base_url('mileage') ?>">Mileage</a> </span>
+            <span><a href="<?= base_url('airlines') ?>">Airlines</a></span>
+            <span><a href="<?= base_url('contact') ?>">Enquiry/Complaints</a> </span>   
+            <span><a href="<?= base_url('about') ?>" >About Us</a></span>     
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-12">
+            <div class='row marquee-row'>
+                <div class='col-md-2'>
+                    <span class='sans'>Selling Rate in JPY (¥)</span>
+                </div>
+                <div class='col-md-10'>
+                    <marquee id='sell_marquee' scrolldelay='0' ></marquee> 
+                </div>
+                <div class='col-md-2'>
+                    <span class='sans'>Buying Rate in JPY (¥)</span>
+                </div>
+                <div class='col-md-10'>
+                    <marquee id='buy_marquee' scrolldelay='0' ></marquee>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xs-12">
                     <h1 class="text-center sans">
@@ -445,7 +471,7 @@
                 <div class='col-xs-12 moneytransfer'>
 
                 </div>	
-                <div class='col-xs-12 '>
+                <div class='col-xs-12 col-md-4 col-md-offset-4'>
                     <a href="<?= base_url('money_transfer') ?>" class='btn btn-default green-btn center-block'> SEND MONEY <i class="fa fa-fighter-jet"></i></a>
                 </div>
             </div>
@@ -483,48 +509,9 @@
             </div>
 
         </div>		 
-        <div class='col-xs-12'>
-            <button type="button" class="btn btn-default carrot-btn center-block" data-toggle="modal" data-target="#myModal">See Our Rates</button>
-        </div>
-
-
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
-
-
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title sansa">Our Rate List</h4>
-                    </div>
-                    <div class="modal-body">
-                        <table class="table table-bordered table-responsive" style='width:80%;'>
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Currency </th> 
-
-                                    <th>We Sell At</th>
-                                    <th>We Buy At</th>
-                                </tr>
-                            </thead>
-
-                            <tbody id='feTable'>
-
-                            </tbody>
-                        </table>
-                    </div>
-
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>  
-
+        <div class='col-xs-12 col-md-4 col-md-offset-4'>
+            <a type="button" class="btn btn-default carrot-btn center-block" data-toggle="modal" data-target="#myModal">See Our Rates</a>
+        </div> 
     </div>
 
 
@@ -592,4 +579,41 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        $.getJSON('<?php echo base_url(); ?>home/getProfit', function (json) {
+            var buy = json[0].profit_buy;
+            var sell = json[0].profit_sell;
+            var html = '';
+            var sell_marquee = '';
+            var buy_marquee = '';
+            var i;
+            var j = 1;
+            $.getJSON('http://www.apilayer.net/api/live?access_key=94fa203bd4e7c38de4d1cb09de59f7ce', function (data) {
+                data = data.quotes;
+                console.log(data);
 
+                for (i in data) {
+                    var rate = 1 / (data[i] / data['USDJPY']);
+                    var sell_rate = (rate + ((rate * sell) / 100));
+                    var buy_rate = (rate - ((rate * buy) / 100));
+                    var currency_name = 'cut' + i;
+                    currency_name = currency_name.replace('cutUSD', '');
+                    html += '<tr>' + '<td>' + j + '</td>' + '<td>' + currency_name + '</td>' + '<td> ' + sell_rate + '</td>' + '<td> ' + buy_rate + '</td>' + '</tr>';
+                    sell_marquee += '<span>' + currency_name + ' : ' +  sell_rate.toFixed(3) + ' ' + ', </span>';
+                    buy_marquee +=  '<span>' + currency_name + ' : ' +  buy_rate.toFixed(3) + ' ' + ', </span>';
+                    j++;
+                }
+                $('#feTable').html(html); 
+
+                $('#sell_marquee').html(sell_marquee);
+                $('#buy_marquee').html(buy_marquee);
+
+            });
+
+        });
+    });
+
+
+
+</script>

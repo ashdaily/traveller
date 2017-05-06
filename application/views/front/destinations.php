@@ -2,15 +2,16 @@
     <section class="product-detail col-xs-12" style="transform: none;">
         <div class="container" style="transform: none;">
             <div class="row">
+                <?php $i = 1;?>
                 <?php foreach ($result as $row) { ?>
                     <div class="col-sm-4">
                         <article class="place-box card">
                             <a href="<?= base_url('/places/'.$row->code) ?>" class="place-link">
                                 <header>
-                                    <h3 class="entry-title"><?= $row->name ?></h3>
+                                    <h3 class="entry-title sans"><?= $row->name ?></h3>
                                 </header>
                                 <div class="entry-thumbnail">
-                                    <img src="<?= base_url('assets/images/crop-1.jpg') ?>" alt="" />
+                                    <img src="<?php echo base_url() ?>/assets/front/images/continents/<?php echo $i; $i++;?>.jpg" alt="" />
                                 </div>
                             </a>
                         </article>

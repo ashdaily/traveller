@@ -1,8 +1,45 @@
+   <!-- Modal -->
+ <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title sansa">Our Rate List</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-responsive" style='width:80%;'>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Currency </th> 
+
+                                    <th>We Sell At</th>
+                                    <th>We Buy At</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id='feTable'>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>  
+
 <footer class='container-fluid'>
     <div class='col-xs-12'>
         <div class='social-buttons'>
-            <a href="https://www.facebook.com/FunTravel-Roppongi-169642149753285" class="btn" ><span class="fa fa-facebook-f"></span></a>
-            <a href="https://twitter.com/FunTravelTokyo" class="btn" ><span class="fa fa-twitter"></span></a>
+            <a target='_blank' href="https://www.facebook.com/FunTravel-Roppongi-169642149753285" class="btn" ><span class="fa fa-facebook-f"></span></a>
+            <a target='_blank' href="https://twitter.com/FunTravelTokyo" class="btn" ><span class="fa fa-twitter"></span></a>
         </div>
         <div class="links sans">
             <a href="<?= base_url() ?>">Home</a>
@@ -22,10 +59,7 @@
         Copyright 2017 Fun Travel | All Right Reserved
     </div>
 </footer> 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="<?= base_url() ?>assets/front/js/jquery.smartWizard-2.0.min.js"></script>
 <script type="text/javascript">
     $('.carousel').carousel({
@@ -97,13 +131,13 @@
                     success: function (response) {
                         if (response.success) {
                             $('#booking')[0].reset();
-                            $('.alert-success').html('Query Sent successfully').fadeIn().delay(4000).fadeOut('slow');
+                           $('#success-alert').fadeIn().delay(4000).fadeOut('slow');
                         } else {
                             alert('Error');
                         }
                     },
                     error: function () {
-                        $('.alert-success').html('Could not send Query').fadeIn().delay(4000).fadeOut('slow');
+                         $('#failure-alert').fadeIn().delay(4000).fadeOut('slow');
                     }
                 });
             }
@@ -157,13 +191,13 @@
                                 if (response.success === true) {
                                     $('#flight_booking')[0].reset();
                                     $('#myModal').modal('hide');
-                                    $('.alert-success').html('Query Sent successfully').fadeIn().delay(4000).fadeOut('slow');
+                                    $('#success-alert').fadeIn().delay(4000).fadeOut('slow');
                                 } else {
                                     alert('Error');
                                 }
                             },
                             error: function () {
-                                $('.alert-success').html('Could not send Query').fadeIn().delay(4000).fadeOut('slow');
+                                $('#failure-alert').fadeIn().delay(4000).fadeOut('slow');
                             }
                         });
                     }
@@ -310,13 +344,13 @@
                     success: function (response) {
                         if (response.success) {
                             $('#money_transfer')[0].reset();
-                            $('.alert-success').html('Query Sent successfully').fadeIn().delay(4000).fadeOut('slow');
+                            $('#success-alert').fadeIn().delay(4000).fadeOut('slow');
                         } else {
                             alert('Error');
                         }
                     },
                     error: function () {
-                        $('.alert-success').html('Could not send Query').fadeIn().delay(4000).fadeOut('slow');
+                        $('#failure-alert').fadeIn().delay(4000).fadeOut('slow');
                     }
                 });
             }
@@ -404,36 +438,21 @@
     });
 
 </script>
-<script>
-    $(document).ready(function () {
-        $.getJSON('<?php echo base_url(); ?>home/getProfit', function (json) {
-            var buy = json[0].profit_buy;
-            var sell = json[0].profit_sell;
-            var html = '';
-            var i;
-            var j = 1;
-            $.getJSON('http://www.apilayer.net/api/live?access_key=94fa203bd4e7c38de4d1cb09de59f7ce', function (data) {
-                data = data.quotes;
-                console.log(data);
 
-                for (i in data) {
-                    var rate = 1 / (data[i] / data['USDJPY']);
-                    var sell_rate = (rate + ((rate * sell) / 100));
-                    var buy_rate = (rate - ((rate * buy) / 100));
-                    var currency_name = 'cut' + i;
-                    currency_name = currency_name.replace('cutUSD', '');
-                    html += '<tr>' + '<td>' + j + '</td>' + '<td>' + currency_name + '</td>' + '<td> ' + sell_rate + '</td>' + '<td> ' + buy_rate + '</td>' + '</tr>';
-                    j++;
-                }
-                $('#feTable').html(html);
-            });
-
-        });
+<!-- loader script -->
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#loader').fadeOut();
     });
 
-
-
 </script>
-
+<script type="text/javascript">
+    $('#money-transfer-link').parent().click(function(){ 
+        window.location.replace('<?= base_url('money_transfer') ?>');
+    });
+    $('#forex-booking').click(function(){
+        window.location.replace('<?php echo base_url('forex-booking');?>');
+    });
+</script>
 </body>
 </html>

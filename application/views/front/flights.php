@@ -20,7 +20,7 @@
                             <tr>
                                 <td><?= $row->flight_from ?></td>
                                 <td><?= $row->flight_to ?></td>
-                                <td>Starting From $<?= $row->flight_price ?>*</td>
+                                <td>Starting From ¥ <?= $row->flight_price ?>*</td>
                                 <td>
                                     <button id="flight-book" rel="<?= $row->id ?>" class="flight_booking btn carrot-btn btn-sm" data-toggle="modal" data-target="#myModal">Book</button>
                                 </td>

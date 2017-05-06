@@ -65,4 +65,22 @@ class Users extends CI_Model {
             return false;
         }
     }
+
+    public function forex_users(){
+        $field = array(
+            'currency_name' => $this->input->post('forex_currency_name'),
+            'amount' => $this->input->post('forex_amount'),
+            'name' => $this->input->post('forex_name'),
+            'nationality' => $this->input->post('forex_nationality'),
+            'email' => $this->input->post('forex_email'),
+            'phoneno' => $this->input->post('forex_phoneno')
+            );
+        $this->db->insert('forex_users',$field);
+        if ($this->db->affected_rows() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
 }

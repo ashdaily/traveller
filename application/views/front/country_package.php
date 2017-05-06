@@ -7,7 +7,7 @@
                         <article class="place-box card">
                             <a href="<?= base_url('/packages/'.$row->iso3) ?>" class="place-link">
                                 <header>
-                                    <h3 class="entry-title"><?= $row->name ?></h3>
+                                    <h3 class="entry-title sans"><?= $row->name ?></h3>
                                 </header>
                                 <div class="entry-thumbnail">
                                     <img src="<?= base_url('assets/images/crop-2.jpg') ?>" alt="" />
