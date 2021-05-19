@@ -2,24 +2,20 @@
 
 ---
 
-Traveller is end to end solution
+Traveller is end to end solution for travel agencies.
+Built with Neon admin panel them, Codeigniter/PHP, HTML/CSS/JS
 
 ---
 
-### What is does ? 
+### What it provides ? 
 
 ---
 
-- Type the name of the city in the search
-- Checkout the weather details
-- Convert the temperature scale
-- See Graphical representation of weather metrics like Humidity, Wind and Pressure.
-
----
-
-### Here is the demo look
-
----
-
-![image info](./static/images/demo.png)
-
+- Book travel packages
+- Book Forex money transfer 
+- Book plane ticket booking
+- Has admin control to receive all bookings 
+- Sales/Purchase management
+- Invoicing system
+- Customer management
+- Secure auth
