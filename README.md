@@ -11,11 +11,11 @@ Built with Neon admin panel them, Codeigniter/PHP, HTML/CSS/JS, MySQL.
 
 ---
 
-- Book travel packages
-- Book Forex money transfer 
-- Book plane ticket booking
-- Has admin control to receive all bookings 
+- Travel packages booking system for customers and admin
+- Booking system for Forex money transfer 
+- Booking system for plane tickets
+- Admin control
 - Sales/Purchase management
-- Invoicing system
+- Invoicing system solution
 - Customer management
 - Secure auth
