@@ -38,8 +38,8 @@
 <footer class='container-fluid'>
     <div class='col-xs-12'>
         <div class='social-buttons'>
-            <a target='_blank' href="https://www.facebook.com/FunTravel-Roppongi-169642149753285" class="btn" ><span class="fa fa-facebook-f"></span></a>
-            <a target='_blank' href="https://twitter.com/FunTravelTokyo" class="btn" ><span class="fa fa-twitter"></span></a>
+            <a target='_blank' href="https://www.facebook.com/" class="btn" ><span class="fa fa-facebook-f"></span></a>
+            <a target='_blank' href="https://twitter.com/" class="btn" ><span class="fa fa-twitter"></span></a>
         </div>
         <div class="links sans">
             <a href="<?= base_url() ?>">Home</a>
@@ -56,7 +56,7 @@
     </div>
     <div class="clearfix"></div>
     <div class="copyright sansa">
-        Copyright 2017 Fun Travel | All Right Reserved
+        Copyright 2017 Traveller | All Right Reserved
     </div>
 </footer> 
 

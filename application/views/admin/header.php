@@ -8,7 +8,7 @@
         <meta name="description" content="Neon Admin Panel" />
         <meta name="author" content="Laborator.co" />
         <link rel="icon" href="<?= base_url() ?>assets/images/favicon.ico">
-        <title>Admin FunTravel</title>
+        <title>Admin | Traveller</title>
         <link rel="stylesheet" href="<?= base_url() ?>assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css" id="style-resource-1">
         <link rel="stylesheet" href="<?= base_url() ?>assets/css/font-icons/entypo/css/entypo.css" id="style-resource-2">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" id="style-resource-3">
@@ -36,7 +36,7 @@
                         <!-- logo -->
                         <div class="logo">
                             <a href="#">
-                               <h3 style="color:#fff;">FUN TRAVEL</h3>
+                               <h3 style="color:#fff;">Traveller</h3>
                             </a>
                         </div>
                         <!-- logo collapse icon -->

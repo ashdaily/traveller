@@ -6,8 +6,8 @@
                 <div class="col-sm-3 sidebar">
                     <h3 class="sansa text-green">Useful Links</h3>
                     <ul>
-                        <li><a href="https://www.facebook.com/FunTravel-Roppongi-169642149753285/">Follow on Facebook</a></li>
-                        <li><a href="https://twitter.com/FunTravelTokyo">Follow on Twitter</a></li>
+                        <li><a href="https://www.facebook.com/">Follow on Facebook</a></li>
+                        <li><a href="https://twitter.com/">Follow on Twitter</a></li>
                         <li><a href="<?= base_url('transfers') ?>">Transfers</a></li>
                         <li><a href="<?= base_url('airlines') ?>">Airlines</a></li>
                         <li><a href="<?= base_url('mileage') ?>">Mileage</a></li>
@@ -25,12 +25,12 @@
                         <tr>
                             <th>Head office</th>
                             <td width="50" class="text-center">:</td>
-                            <td>4-20-5 Futaba, Shinagawa, Tokyo 142-0043</td>
+                            <td>Shinagawa, Tokyo 142-0043</td>
                         </tr>
                         <tr>
                             <th>CEO</th>
                             <td width="50" class="text-center">:</td>
-                            <td>HENRY E. OGBEBOR</td>
+                            <td>CEO name</td>
                         </tr>
                         <tr>
                             <th>Domain Identity</th>
@@ -40,12 +40,12 @@
                         <tr>
                             <th>Capital</th>
                             <td width="50" class="text-center">:</td>
-                            <td>14,000,000 JPY</td>
+                            <td>1,000,000 JPY</td>
                         </tr>
                         <tr>
                             <th>Our Bank</th>
                             <td width="50" class="text-center">:</td>
-                            <td>MitsuiSumitomo</td>
+                            <td>Bank name</td>
                         </tr>
                     </table>
                     <h3 class="sans text-green" id="companyInformation"><u>Office Information</u></h3>
@@ -58,17 +58,17 @@
                         <tr>
                             <th>Address</th>
                             <td class="text-center">:</td>
-                            <td>President Roppongi Bldg.2F 203 3-2-16 NishiAzabu, Minato-ku, Tokyo 106-0031,Japan</td>
+                            <td> Roppongi, Minato-ku, Tokyo,Japan</td>
                         </tr>
                         <tr>
                             <th>Telephone</th>
                             <td class="text-center">:</td>
-                            <td>03-6661-3951</td>
+                            <td>03-0000-3951</td>
                         </tr>
                         <tr>
                             <th>Fax</th>
                             <td class="text-center">:</td>
-                            <td>03-6661-3952</td>
+                            <td>03-000-3952</td>
                         </tr>
                         <tr>
                             <th>Open</th>

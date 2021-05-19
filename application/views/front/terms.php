@@ -6,8 +6,8 @@
                 <div class="col-sm-3 sidebar">
                     <h3 class="sansa text-green">Useful Links</h3>
                     <ul>
-                        <li><a href="https://www.facebook.com/FunTravel-Roppongi-169642149753285/">Follow on Facebook</a></li>
-                        <li><a href="https://twitter.com/FunTravelTokyo">Follow on Twitter</a></li>
+                        <li><a href="https://www.facebook.com/">Follow on Facebook</a></li>
+                        <li><a href="https://twitter.com/">Follow on Twitter</a></li>
                         <li><a href="<?= base_url('transfers') ?>">Transfers</a></li>
                         <li><a href="<?= base_url('airlines') ?>">Airlines</a></li>
                         <li><a href="<?= base_url('mileage') ?>">Mileage</a></li>

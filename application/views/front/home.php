@@ -485,7 +485,7 @@
             <h1 class='text-center'>Foreign Currency Exchange<br>
                 <span> 
                     Best Forex Rates Around You  
-                    Funtravel compares exchange rate quotes across hundreds of banks and money changers</span>
+                    Traveller compares exchange rate quotes across hundreds of banks and money changers</span>
             </h1>
         </div>	 
         <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 '>
@@ -522,7 +522,7 @@
         <div class="col-sm-10 col-sm-offset-1 ">
             <h1 class='text-center h1'>Holiday Packages<br>
                 <span> 
-                    Visit around the world with fun travel</span>
+                    Visit around the world with Traveller</span>
             </h1>
             <div id="owl-demo" class="owl-carousel">
                 <?php foreach ($result as $row) { ?>
