@@ -3,7 +3,7 @@
 ---
 
 Traveller is end to end solution for travel agencies.
-Built with Neon admin panel them, Codeigniter/PHP, HTML/CSS/JS
+Built with Neon admin panel them, Codeigniter/PHP, HTML/CSS/JS, MySQL.
 
 ---
 
